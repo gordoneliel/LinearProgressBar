@@ -1,9 +1,7 @@
 # LinearProgressBar
 Simple progress bar for iOS
 
-# LinearProgressBar
-
-[![CI Status](http://img.shields.io/travis/gordoneliel/LinearProgressBar.svg?style=flat)](https://travis-ci.org/gordoneliel/LinearProgressBar)
+<!--[![CI Status](http://img.shields.io/travis/gordoneliel/LinearProgressBar.svg?style=flat)](https://travis-ci.org/gordoneliel/LinearProgressBar)-->
 [![Version](https://img.shields.io/cocoapods/v/LinearProgressBar.svg?style=flat)](http://cocoapods.org/pods/LinearProgressBar)
 [![License](https://img.shields.io/cocoapods/l/LinearProgressBar.svg?style=flat)](http://cocoapods.org/pods/LinearProgressBar)
 [![Platform](https://img.shields.io/cocoapods/p/LinearProgressBar.svg?style=flat)](http://cocoapods.org/pods/LinearProgressBar)
