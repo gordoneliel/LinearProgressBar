@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
 
 
     s.homepage         = "https://github.com/gordoneliel/LinearProgressBar"
-    # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
+    s.screenshots     = "https://github.com/gordoneliel/LinearProgressBar/blob/master/Promotional_images/hero.png"
     s.license          = 'MIT'
     s.author           = { "Eliel Gordon" => "gordoneliel@gmail.com" }
     s.source           = { :git => "https://github.com/gordoneliel/LinearProgressBar.git", :tag => s.version.to_s }
