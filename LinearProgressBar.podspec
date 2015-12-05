@@ -5,11 +5,10 @@ Pod::Spec.new do |s|
 
     s.description      = <<-DESC
     # LinearProgressBar
-    # LinearProgressBar is a simple timer control for iOS.
-    # It makes timing in your applications simple.
+    # LinearProgressBar is a simple bar control for iOS.
     # What it does?
     # It can be used for tracking progress such as timing applications, progress indicators and more.
-    # Just pod the file and start using the library
+    # Just pod and start using the library
     DESC
 
 

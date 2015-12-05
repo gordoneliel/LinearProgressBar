@@ -19,12 +19,12 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j53-wF-rB4" customClass="LinearProgressView" customModule="LinearProgressBar">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="100"/>
+                                <rect key="frame" x="0.0" y="35" width="600" height="50"/>
                                 <animations/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="ld3-1K-uoC"/>
+                                    <constraint firstAttribute="height" constant="50" id="ld3-1K-uoC"/>
                                     <constraint firstAttribute="width" secondItem="j53-wF-rB4" secondAttribute="height" multiplier="4:1" id="ueX-nt-zq5"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
@@ -35,13 +35,13 @@
                                         <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="barThickness">
-                                        <real key="value" value="12"/>
+                                        <real key="value" value="9"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="progressValue">
-                                        <real key="value" value="-13"/>
+                                        <real key="value" value="15"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="barPadding">
-                                        <real key="value" value="43"/>
+                                        <real key="value" value="30"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="barColor">
                                         <color key="value" red="0.011764706112444401" green="0.5058823823928833" blue="0.78823530673980713" alpha="1" colorSpace="calibratedRGB"/>
@@ -61,7 +61,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="j53-wF-rB4" secondAttribute="trailing" id="Jlg-PO-Jbs"/>
-                            <constraint firstItem="j53-wF-rB4" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="XnT-Un-YwK"/>
+                            <constraint firstItem="j53-wF-rB4" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="35" id="XnT-Un-YwK"/>
                             <constraint firstItem="j53-wF-rB4" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="fjf-BP-xPi"/>
                             <constraint firstItem="j53-wF-rB4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="szl-gs-u5c"/>
                             <constraint firstItem="j53-wF-rB4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="z1J-9j-IzR"/>
