@@ -37,19 +37,19 @@
                                         <real key="value" value="8"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="progressValue">
-                                        <real key="value" value="88"/>
+                                        <real key="value" value="50"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="barPadding">
                                         <real key="value" value="35"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="barColor">
-                                        <color key="value" red="0.011764706112444401" green="0.5058823823928833" blue="0.78823530673980713" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="value" red="0.90980392160000001" green="0.68627450980000004" blue="0.078431372550000003" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="trackColor">
-                                        <color key="value" red="0.20375469603825136" green="0.20375469603825136" blue="0.20375469603825136" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="value" red="0.85882353779999998" green="0.39794438778209235" blue="0.11220370306722112" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="trackPadding">
-                                        <real key="value" value="8"/>
+                                        <real key="value" value="5"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <variation key="default">
