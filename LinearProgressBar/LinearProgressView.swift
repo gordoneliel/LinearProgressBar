@@ -19,6 +19,7 @@ class LinearProgressView: UIView {
     @IBInspectable var trackColor: UIColor = UIColor.yellowColor()
     @IBInspectable var barThickness: CGFloat = 10
     @IBInspectable var barPadding: CGFloat = 0
+    @IBInspectable var trackPadding: CGFloat = 6
     @IBInspectable var progressValue: CGFloat = 0 {
         didSet {
             if (progressValue >= 100) {
@@ -35,6 +36,7 @@ class LinearProgressView: UIView {
         drawProgressView()
     }
     
+    // Draws the progress bar and track
     func drawProgressView() {
         let context = UIGraphicsGetCurrentContext()
         CGContextSaveGState(context)
@@ -42,12 +44,13 @@ class LinearProgressView: UIView {
         // Progres Bar Track
         CGContextSetStrokeColorWithColor(context, trackColor.CGColor)
         CGContextBeginPath(context)
-        CGContextSetLineWidth(context, barThickness)
+        CGContextSetLineWidth(context, barThickness + trackPadding)
         CGContextMoveToPoint(context, barPadding, frame.size.height / 2)
         CGContextAddLineToPoint(context, frame.size.width - barPadding, frame.size.height / 2)
         CGContextSetLineCap(context, CGLineCap.Round)
         CGContextStrokePath(context)
         
+        // Progress Bar
         CGContextSetStrokeColorWithColor(context, barColor.CGColor)
         CGContextSetLineWidth(context, barThickness)
         CGContextBeginPath(context)
@@ -59,6 +62,11 @@ class LinearProgressView: UIView {
         CGContextRestoreGState(context)
     }
     
+    /**
+     Calculates the percent value of the progress bar
+     
+     - returns: The percentage of progress
+     */
     func calcualtePercentage() -> CGFloat {
         let screenWidth = frame.size.width - (barPadding * 2)
         let progress = ((progressValue / 100) * screenWidth)
