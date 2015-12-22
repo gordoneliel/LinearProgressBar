@@ -19,6 +19,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		054997341C29058200D7C0E4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 05AC61AA1BF6AE1D00BFA053 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 05AC61D21BF6B99600BFA053;
+			remoteInfo = LinearProgressBarExample;
+		};
 		05AC61BF1BF6AE1D00BFA053 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 05AC61AA1BF6AE1D00BFA053 /* Project object */;
@@ -167,6 +174,7 @@
 			);
 			dependencies = (
 				05AC61C01BF6AE1D00BFA053 /* PBXTargetDependency */,
+				054997351C29058200D7C0E4 /* PBXTargetDependency */,
 			);
 			name = LinearProgressBarTests;
 			productName = LinearProgressBarTests;
@@ -289,6 +297,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		054997351C29058200D7C0E4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 05AC61D21BF6B99600BFA053 /* LinearProgressBarExample */;
+			targetProxy = 054997341C29058200D7C0E4 /* PBXContainerItemProxy */;
+		};
 		05AC61C01BF6AE1D00BFA053 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 05AC61B21BF6AE1D00BFA053 /* LinearProgressBar */;
