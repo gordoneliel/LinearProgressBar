@@ -37,7 +37,7 @@
                                         <real key="value" value="8"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="progressValue">
-                                        <real key="value" value="78"/>
+                                        <real key="value" value="88"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="barPadding">
                                         <real key="value" value="35"/>
@@ -49,7 +49,7 @@
                                         <color key="value" red="0.20375469603825136" green="0.20375469603825136" blue="0.20375469603825136" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="trackPadding">
-                                        <real key="value" value="6"/>
+                                        <real key="value" value="8"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <variation key="default">
