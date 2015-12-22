@@ -72,4 +72,4 @@ class LinearProgressView: UIView {
         let progress = ((progressValue / 100) * screenWidth)
         return progress < 0 ? barPadding : progress
     }
- }
+}

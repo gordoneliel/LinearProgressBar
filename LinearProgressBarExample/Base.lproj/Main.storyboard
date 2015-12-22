@@ -74,6 +74,9 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="progressBar" destination="j53-wF-rB4" id="5jk-NW-CnT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
