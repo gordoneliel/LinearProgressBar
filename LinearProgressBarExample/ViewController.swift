@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import LinearProgressBar
 
 class ViewController: UIViewController {
     
