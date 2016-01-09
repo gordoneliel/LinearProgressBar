@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		058891B51C40F24100C1CC61 /* LinearProgressBar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05AC61B31BF6AE1D00BFA053 /* LinearProgressBar.framework */; };
+		058891B61C40F24100C1CC61 /* LinearProgressBar.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 05AC61B31BF6AE1D00BFA053 /* LinearProgressBar.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		05AC61B71BF6AE1D00BFA053 /* LinearProgressBar.h in Headers */ = {isa = PBXBuildFile; fileRef = 05AC61B61BF6AE1D00BFA053 /* LinearProgressBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		05AC61BE1BF6AE1D00BFA053 /* LinearProgressBar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05AC61B31BF6AE1D00BFA053 /* LinearProgressBar.framework */; };
 		05AC61C31BF6AE1D00BFA053 /* LinearProgressBarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05AC61C21BF6AE1D00BFA053 /* LinearProgressBarTests.swift */; };
@@ -26,6 +28,13 @@
 			remoteGlobalIDString = 05AC61D21BF6B99600BFA053;
 			remoteInfo = LinearProgressBarExample;
 		};
+		058891B71C40F24100C1CC61 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 05AC61AA1BF6AE1D00BFA053 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 05AC61B21BF6AE1D00BFA053;
+			remoteInfo = LinearProgressBar;
+		};
 		05AC61BF1BF6AE1D00BFA053 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 05AC61AA1BF6AE1D00BFA053 /* Project object */;
@@ -34,6 +43,20 @@
 			remoteInfo = LinearProgressBar;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		058891B91C40F24100C1CC61 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				058891B61C40F24100C1CC61 /* LinearProgressBar.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		05AC61B31BF6AE1D00BFA053 /* LinearProgressBar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LinearProgressBar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -72,6 +95,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				058891B51C40F24100C1CC61 /* LinearProgressBar.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,10 +212,12 @@
 				05AC61CF1BF6B99600BFA053 /* Sources */,
 				05AC61D01BF6B99600BFA053 /* Frameworks */,
 				05AC61D11BF6B99600BFA053 /* Resources */,
+				058891B91C40F24100C1CC61 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				058891B81C40F24100C1CC61 /* PBXTargetDependency */,
 			);
 			name = LinearProgressBarExample;
 			productName = LinearProgressBarExample;
@@ -301,6 +327,11 @@
 			isa = PBXTargetDependency;
 			target = 05AC61D21BF6B99600BFA053 /* LinearProgressBarExample */;
 			targetProxy = 054997341C29058200D7C0E4 /* PBXContainerItemProxy */;
+		};
+		058891B81C40F24100C1CC61 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 05AC61B21BF6AE1D00BFA053 /* LinearProgressBar */;
+			targetProxy = 058891B71C40F24100C1CC61 /* PBXContainerItemProxy */;
 		};
 		05AC61C01BF6AE1D00BFA053 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -484,6 +515,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = LinearProgressBarExample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -497,6 +529,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = LinearProgressBarExample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
