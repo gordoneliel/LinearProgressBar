@@ -35,6 +35,7 @@ class LinearProgressView: UIView {
             } else if (progressValue <= 0) {
                 progressValue = 0
             }
+            setNeedsDisplay()
         }
     }
     
