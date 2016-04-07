@@ -9,7 +9,7 @@
 import UIKit
 
 @IBDesignable
-class LinearProgressView: UIView {
+public class LinearProgressView: UIView {
     
     @IBInspectable var barColor: UIColor = UIColor.greenColor()
     @IBInspectable var trackColor: UIColor = UIColor.yellowColor()
@@ -35,7 +35,7 @@ class LinearProgressView: UIView {
         return trackHeight / 2
     }
     
-    override func drawRect(rect: CGRect) {
+    public override func drawRect(rect: CGRect) {
         drawProgressView()
     }
     
