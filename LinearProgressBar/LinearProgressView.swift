@@ -8,10 +8,6 @@
 
 import UIKit
 
-protocol LinearProgressDelegate: class {
-    func didChangeProgress(fromValue from: Double, toValue to: Double)
-}
-
 @IBDesignable
 class LinearProgressView: UIView {
     
@@ -39,7 +35,6 @@ class LinearProgressView: UIView {
         }
     }
     
-    weak var delegate: LinearProgressDelegate?
     private var trackHeight: CGFloat {
         return barThickness + trackPadding
     }
