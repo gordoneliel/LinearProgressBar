@@ -15,15 +15,7 @@ class LinearProgressView: UIView {
     @IBInspectable var trackColor: UIColor = UIColor.yellowColor()
     @IBInspectable var barThickness: CGFloat = 10
     @IBInspectable var barPadding: CGFloat = 0
-    @IBInspectable var trackPadding: CGFloat = 6 {
-        didSet {
-            if trackPadding < 0 {
-                trackPadding = 0
-            }else if trackPadding > barThickness {
-                trackPadding = 0
-            }
-        }
-    }
+    @IBInspectable var trackPadding: CGFloat = 6
     @IBInspectable var progressValue: CGFloat = 0 {
         didSet {
             if (progressValue >= 100) {
