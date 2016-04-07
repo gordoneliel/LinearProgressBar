@@ -40,6 +40,13 @@ class LinearProgressView: UIView {
     }
     
     weak var delegate: LinearProgressDelegate?
+    private var trackHeight: CGFloat {
+        return barThickness + trackPadding
+    }
+    
+    private var trackOffset: CGFloat {
+        return trackHeight / 2
+    }
     
     override func drawRect(rect: CGRect) {
         drawProgressView()
@@ -53,9 +60,9 @@ class LinearProgressView: UIView {
         // Progres Bar Track
         CGContextSetStrokeColorWithColor(context, trackColor.CGColor)
         CGContextBeginPath(context)
-        CGContextSetLineWidth(context, barThickness + trackPadding)
-        CGContextMoveToPoint(context, barPadding, frame.size.height / 2)
-        CGContextAddLineToPoint(context, frame.size.width - barPadding, frame.size.height / 2)
+        CGContextSetLineWidth(context, trackHeight)
+        CGContextMoveToPoint(context, barPadding + trackOffset, frame.size.height / 2)
+        CGContextAddLineToPoint(context, frame.size.width - barPadding - trackOffset, frame.size.height / 2)
         CGContextSetLineCap(context, CGLineCap.Round)
         CGContextStrokePath(context)
         
@@ -63,7 +70,7 @@ class LinearProgressView: UIView {
         CGContextSetStrokeColorWithColor(context, barColor.CGColor)
         CGContextSetLineWidth(context, barThickness)
         CGContextBeginPath(context)
-        CGContextMoveToPoint(context, barPadding, frame.size.height / 2)
+        CGContextMoveToPoint(context, barPadding + trackOffset, frame.size.height / 2)
         CGContextAddLineToPoint(context, barPadding + calcualtePercentage() , frame.size.height / 2)
         CGContextSetLineCap(context, CGLineCap.Round)
         CGContextStrokePath(context)
@@ -77,7 +84,7 @@ class LinearProgressView: UIView {
      - returns: The percentage of progress
      */
     func calcualtePercentage() -> CGFloat {
-        let screenWidth = frame.size.width - (barPadding * 2)
+        let screenWidth = frame.size.width - (barPadding * 2) - trackOffset
         let progress = ((progressValue / 100) * screenWidth)
         return progress < 0 ? barPadding : progress
     }
