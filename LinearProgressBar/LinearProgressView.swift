@@ -11,12 +11,12 @@ import UIKit
 @IBDesignable
 public class LinearProgressView: UIView {
     
-    @IBInspectable var barColor: UIColor = UIColor.greenColor()
-    @IBInspectable var trackColor: UIColor = UIColor.yellowColor()
-    @IBInspectable var barThickness: CGFloat = 10
-    @IBInspectable var barPadding: CGFloat = 0
-    @IBInspectable var trackPadding: CGFloat = 6
-    @IBInspectable var progressValue: CGFloat = 0 {
+    @IBInspectable public var barColor: UIColor = UIColor.greenColor()
+    @IBInspectable public var trackColor: UIColor = UIColor.yellowColor()
+    @IBInspectable public var barThickness: CGFloat = 10
+    @IBInspectable public var barPadding: CGFloat = 0
+    @IBInspectable public var trackPadding: CGFloat = 6
+    @IBInspectable public var progressValue: CGFloat = 0 {
         didSet {
             if (progressValue >= 100) {
                 progressValue = 100
