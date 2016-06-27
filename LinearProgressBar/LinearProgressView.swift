@@ -8,27 +8,15 @@
 
 import UIKit
 
-protocol LinearProgressDelegate: class {
-    func didChangeProgress(fromValue from: Double, toValue to: Double)
-}
-
 @IBDesignable
-class LinearProgressView: UIView {
+public class LinearProgressView: UIView {
     
-    @IBInspectable var barColor: UIColor = UIColor.greenColor()
-    @IBInspectable var trackColor: UIColor = UIColor.yellowColor()
-    @IBInspectable var barThickness: CGFloat = 10
-    @IBInspectable var barPadding: CGFloat = 0
-    @IBInspectable var trackPadding: CGFloat = 6 {
-        didSet {
-            if trackPadding < 0 {
-                trackPadding = 0
-            }else if trackPadding > barThickness {
-                trackPadding = 0
-            }
-        }
-    }
-    @IBInspectable var progressValue: CGFloat = 0 {
+    @IBInspectable public var barColor: UIColor = UIColor.greenColor()
+    @IBInspectable public var trackColor: UIColor = UIColor.yellowColor()
+    @IBInspectable public var barThickness: CGFloat = 10
+    @IBInspectable public var barPadding: CGFloat = 0
+    @IBInspectable public var trackPadding: CGFloat = 6
+    @IBInspectable public var progressValue: CGFloat = 0 {
         didSet {
             if (progressValue >= 100) {
                 progressValue = 100
@@ -39,9 +27,15 @@ class LinearProgressView: UIView {
         }
     }
     
-    weak var delegate: LinearProgressDelegate?
+    private var trackHeight: CGFloat {
+        return barThickness + trackPadding
+    }
     
-    override func drawRect(rect: CGRect) {
+    private var trackOffset: CGFloat {
+        return trackHeight / 2
+    }
+    
+    public override func drawRect(rect: CGRect) {
         drawProgressView()
     }
     
@@ -53,9 +47,9 @@ class LinearProgressView: UIView {
         // Progres Bar Track
         CGContextSetStrokeColorWithColor(context, trackColor.CGColor)
         CGContextBeginPath(context)
-        CGContextSetLineWidth(context, barThickness + trackPadding)
-        CGContextMoveToPoint(context, barPadding, frame.size.height / 2)
-        CGContextAddLineToPoint(context, frame.size.width - barPadding, frame.size.height / 2)
+        CGContextSetLineWidth(context, trackHeight)
+        CGContextMoveToPoint(context, barPadding + trackOffset, frame.size.height / 2)
+        CGContextAddLineToPoint(context, frame.size.width - barPadding - trackOffset, frame.size.height / 2)
         CGContextSetLineCap(context, CGLineCap.Round)
         CGContextStrokePath(context)
         
@@ -63,7 +57,7 @@ class LinearProgressView: UIView {
         CGContextSetStrokeColorWithColor(context, barColor.CGColor)
         CGContextSetLineWidth(context, barThickness)
         CGContextBeginPath(context)
-        CGContextMoveToPoint(context, barPadding, frame.size.height / 2)
+        CGContextMoveToPoint(context, barPadding + trackOffset, frame.size.height / 2)
         CGContextAddLineToPoint(context, barPadding + calcualtePercentage() , frame.size.height / 2)
         CGContextSetLineCap(context, CGLineCap.Round)
         CGContextStrokePath(context)
@@ -77,7 +71,7 @@ class LinearProgressView: UIView {
      - returns: The percentage of progress
      */
     func calcualtePercentage() -> CGFloat {
-        let screenWidth = frame.size.width - (barPadding * 2)
+        let screenWidth = frame.size.width - (barPadding * 2) - trackOffset
         let progress = ((progressValue / 100) * screenWidth)
         return progress < 0 ? barPadding : progress
     }
