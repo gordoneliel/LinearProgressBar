@@ -26,6 +26,7 @@ public class LinearProgressView: UIView {
             setNeedsDisplay()
         }
     }
+    public var barColorForValue: ((Float)->UIColor)?
     
     private var trackHeight: CGFloat {
         return barThickness + trackPadding
@@ -54,6 +55,7 @@ public class LinearProgressView: UIView {
         CGContextStrokePath(context)
         
         // Progress Bar
+        let barColor = barColorForValue != nil ? barColorForValue!(Float(progressValue)):self.barColor
         CGContextSetStrokeColorWithColor(context, barColor.CGColor)
         CGContextSetLineWidth(context, barThickness)
         CGContextBeginPath(context)
