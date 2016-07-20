@@ -58,7 +58,7 @@ public class LinearProgressView: UIView {
         CGContextSetLineWidth(context, barThickness)
         CGContextBeginPath(context)
         CGContextMoveToPoint(context, barPadding + trackOffset, frame.size.height / 2)
-        CGContextAddLineToPoint(context, barPadding + calcualtePercentage() , frame.size.height / 2)
+        CGContextAddLineToPoint(context, barPadding + trackOffset + calcualtePercentage() , frame.size.height / 2)
         CGContextSetLineCap(context, CGLineCap.Round)
         CGContextStrokePath(context)
         
@@ -71,7 +71,7 @@ public class LinearProgressView: UIView {
      - returns: The percentage of progress
      */
     func calcualtePercentage() -> CGFloat {
-        let screenWidth = frame.size.width - (barPadding * 2) - trackOffset
+        let screenWidth = frame.size.width - (barPadding * 2) - (trackOffset * 2)
         let progress = ((progressValue / 100) * screenWidth)
         return progress < 0 ? barPadding : progress
     }
