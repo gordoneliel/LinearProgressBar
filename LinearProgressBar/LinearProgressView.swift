@@ -41,7 +41,7 @@ public class LinearProgressView: UIView {
     
     // Draws the progress bar and track
     func drawProgressView() {
-        let context = UIGraphicsGetCurrentContext()
+        let context = UIGraphicsGetCurrentContext()!
         CGContextSaveGState(context)
         
         // Progres Bar Track
