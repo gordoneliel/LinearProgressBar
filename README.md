@@ -22,7 +22,12 @@ LinearProgressBar is available through [CocoaPods](http://cocoapods.org). To ins
 it, simply add the following line to your Podfile:
 
 ```ruby
+# Swift 2.0
 pod "LinearProgressBar"
+# Swift 2.3
+pod "LinearProgressBar", :git => 'https://github.com/cmdrsabre/LinearProgressBar'
+# Swift 3.0
+pod "LinearProgressBar", :git => 'https://github.com/cmdrsabre/LinearProgressBar', :branch => 'swift-3'
 ```
 
 ## Author

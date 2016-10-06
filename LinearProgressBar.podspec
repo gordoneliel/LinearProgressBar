@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name             = "LinearProgressBar"
-    s.version          = "0.0.1"
+    s.version          = "0.2.0"
     s.summary          = "LinearProgressBar is a simple bar control for iOS."
 
     s.description      = <<-DESC
@@ -12,14 +12,14 @@ Pod::Spec.new do |s|
     DESC
 
 
-    s.homepage         = "https://github.com/gordoneliel/LinearProgressBar"
-    s.screenshots     = "https://github.com/gordoneliel/LinearProgressBar/blob/master/Promotional_images/hero.png"
+    s.homepage         = "https://github.com/cmdrsabre/LinearProgressBar"
+    s.screenshots     = "https://github.com/cmdrsabre/LinearProgressBar/blob/master/Promotional_images/hero.png"
     s.license          = 'MIT'
     s.author           = { "Eliel Gordon" => "gordoneliel@gmail.com" }
-    s.source           = { :git => "https://github.com/gordoneliel/LinearProgressBar.git", :tag => s.version.to_s }
+    s.source           = { :git => "https://github.com/cmdrsabre/LinearProgressBar.git", :tag => s.version.to_s }
     s.social_media_url = 'https://facebook.com/gordoneliel'
 
-    s.platform     = :ios, '8.0'
+    s.platform     = :ios, '9.0'
     s.requires_arc = true
 
     s.source_files = 'LinearProgressBar/**/*.{swift}'
