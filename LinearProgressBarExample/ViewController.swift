@@ -26,23 +26,23 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    @IBAction func changeSliderValue(sender: UISlider) {
+    @IBAction func changeSliderValue(_ sender: UISlider) {
         linearProgressView.progressValue = CGFloat(sender.value)
     }
 
-    @IBAction func changeSwitchValue(sender: UISwitch) {
-        if sender.on {
+    @IBAction func changeSwitchValue(_ sender: UISwitch) {
+        if sender.isOn {
             // assign color closure
             linearProgressView.barColorForValue = { value in
                 switch value {
                 case 0..<20:
-                    return UIColor.redColor()
+                    return UIColor.red
                 case 20..<60:
-                    return UIColor.orangeColor()
+                    return UIColor.orange
                 case 60..<80:
-                    return UIColor.yellowColor()
+                    return UIColor.yellow
                 default:
-                    return UIColor.greenColor()
+                    return UIColor.green
                 }
             }
             // refresh

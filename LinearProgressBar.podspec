@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name             = "LinearProgressBar"
-    s.version          = "0.0.1"
+    s.version          = “0.0.2”
     s.summary          = "LinearProgressBar is a simple bar control for iOS."
 
     s.description      = <<-DESC

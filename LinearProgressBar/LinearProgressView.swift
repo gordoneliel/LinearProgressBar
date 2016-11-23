@@ -9,14 +9,14 @@
 import UIKit
 
 @IBDesignable
-public class LinearProgressView: UIView {
+open class LinearProgressView: UIView {
     
-    @IBInspectable public var barColor: UIColor = UIColor.greenColor()
-    @IBInspectable public var trackColor: UIColor = UIColor.yellowColor()
-    @IBInspectable public var barThickness: CGFloat = 10
-    @IBInspectable public var barPadding: CGFloat = 0
-    @IBInspectable public var trackPadding: CGFloat = 6
-    @IBInspectable public var progressValue: CGFloat = 0 {
+    @IBInspectable open var barColor: UIColor = UIColor.green
+    @IBInspectable open var trackColor: UIColor = UIColor.yellow
+    @IBInspectable open var barThickness: CGFloat = 10
+    @IBInspectable open var barPadding: CGFloat = 0
+    @IBInspectable open var trackPadding: CGFloat = 6
+    @IBInspectable open var progressValue: CGFloat = 0 {
         didSet {
             if (progressValue >= 100) {
                 progressValue = 100
@@ -26,45 +26,45 @@ public class LinearProgressView: UIView {
             setNeedsDisplay()
         }
     }
-    public var barColorForValue: ((Float)->UIColor)?
+    open var barColorForValue: ((Float)->UIColor)?
     
-    private var trackHeight: CGFloat {
+    fileprivate var trackHeight: CGFloat {
         return barThickness + trackPadding
     }
     
-    private var trackOffset: CGFloat {
+    fileprivate var trackOffset: CGFloat {
         return trackHeight / 2
     }
     
-    public override func drawRect(rect: CGRect) {
+    open override func draw(_ rect: CGRect) {
         drawProgressView()
     }
     
     // Draws the progress bar and track
     func drawProgressView() {
         let context = UIGraphicsGetCurrentContext()
-        CGContextSaveGState(context)
+        context?.saveGState()
         
         // Progres Bar Track
-        CGContextSetStrokeColorWithColor(context, trackColor.CGColor)
-        CGContextBeginPath(context)
-        CGContextSetLineWidth(context, trackHeight)
-        CGContextMoveToPoint(context, barPadding + trackOffset, frame.size.height / 2)
-        CGContextAddLineToPoint(context, frame.size.width - barPadding - trackOffset, frame.size.height / 2)
-        CGContextSetLineCap(context, CGLineCap.Round)
-        CGContextStrokePath(context)
+        context?.setStrokeColor(trackColor.cgColor)
+        context?.beginPath()
+        context?.setLineWidth(trackHeight)
+        context?.move(to: CGPoint(x: barPadding + trackOffset, y: frame.size.height / 2))
+        context?.addLine(to: CGPoint(x: frame.size.width - barPadding - trackOffset, y: frame.size.height / 2))
+        context?.setLineCap(CGLineCap.round)
+        context?.strokePath()
         
         // Progress Bar
         let barColor = barColorForValue != nil ? barColorForValue!(Float(progressValue)):self.barColor
-        CGContextSetStrokeColorWithColor(context, barColor.CGColor)
-        CGContextSetLineWidth(context, barThickness)
-        CGContextBeginPath(context)
-        CGContextMoveToPoint(context, barPadding + trackOffset, frame.size.height / 2)
-        CGContextAddLineToPoint(context, barPadding + trackOffset + calcualtePercentage() , frame.size.height / 2)
-        CGContextSetLineCap(context, CGLineCap.Round)
-        CGContextStrokePath(context)
+        context?.setStrokeColor(barColor.cgColor)
+        context?.setLineWidth(barThickness)
+        context?.beginPath()
+        context?.move(to: CGPoint(x: barPadding + trackOffset, y: frame.size.height / 2))
+        context?.addLine(to: CGPoint(x: barPadding + trackOffset + calcualtePercentage(), y: frame.size.height / 2))
+        context?.setLineCap(CGLineCap.round)
+        context?.strokePath()
         
-        CGContextRestoreGState(context)
+        context?.restoreGState()
     }
     
     /**
