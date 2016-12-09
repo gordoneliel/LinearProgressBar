@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D9c" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
@@ -49,12 +49,37 @@
                                     </mask>
                                 </variation>
                             </view>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="22" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="8p8-Kv-V3Y">
+                                <rect key="frame" x="33" y="138" width="534" height="31"/>
+                                <connections>
+                                    <action selector="changeSliderValue:" destination="BYZ-38-t0r" eventType="valueChanged" id="Gpc-hx-4wy"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Use dynamic color" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4B5-mb-bcv">
+                                <rect key="frame" x="92" y="98" width="143" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="6jY-yw-67d">
+                                <rect key="frame" x="35" y="93" width="51" height="31"/>
+                                <connections>
+                                    <action selector="changeSwitchValue:" destination="BYZ-38-t0r" eventType="valueChanged" id="24Y-XW-mpn"/>
+                                </connections>
+                            </switch>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="4B5-mb-bcv" firstAttribute="leading" secondItem="6jY-yw-67d" secondAttribute="trailing" constant="8" id="Fji-mf-2SP"/>
                             <constraint firstAttribute="trailing" secondItem="j53-wF-rB4" secondAttribute="trailing" id="Jlg-PO-Jbs"/>
+                            <constraint firstItem="4B5-mb-bcv" firstAttribute="centerY" secondItem="6jY-yw-67d" secondAttribute="centerY" id="MM8-Zt-P5x"/>
+                            <constraint firstItem="6jY-yw-67d" firstAttribute="leading" secondItem="8p8-Kv-V3Y" secondAttribute="leading" id="MYy-lp-DuK"/>
+                            <constraint firstItem="6jY-yw-67d" firstAttribute="top" secondItem="j53-wF-rB4" secondAttribute="bottom" constant="8" id="SL6-Cf-y8C"/>
+                            <constraint firstItem="8p8-Kv-V3Y" firstAttribute="trailing" secondItem="j53-wF-rB4" secondAttribute="trailing" constant="-35" id="SXF-Fv-cZ5"/>
                             <constraint firstItem="j53-wF-rB4" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="35" id="XnT-Un-YwK"/>
+                            <constraint firstItem="8p8-Kv-V3Y" firstAttribute="leading" secondItem="j53-wF-rB4" secondAttribute="leading" constant="35" id="Y6K-r1-wek"/>
                             <constraint firstItem="j53-wF-rB4" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="fjf-BP-xPi"/>
+                            <constraint firstItem="8p8-Kv-V3Y" firstAttribute="top" secondItem="j53-wF-rB4" secondAttribute="bottom" constant="53" id="pov-jY-gzh"/>
                             <constraint firstItem="j53-wF-rB4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="szl-gs-u5c"/>
                             <constraint firstItem="j53-wF-rB4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="z1J-9j-IzR"/>
                         </constraints>
@@ -65,6 +90,10 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="linearProgressView" destination="j53-wF-rB4" id="7TI-x3-MdM"/>
+                        <outlet property="sliderView" destination="8p8-Kv-V3Y" id="fvM-Xf-s75"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
