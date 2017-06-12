@@ -12,6 +12,9 @@ import UIKit
 open class LinearProgressView: UIView {
     
     @IBInspectable open var barColor: UIColor = UIColor.green
+    @IBInspectable open var primaryTextColor: UIColor = UIColor.white
+    @IBInspectable open var secondaryTextColor: UIColor = UIColor.white //Created so that a secondary color exists on overlap, if necessary
+    @IBInspectable open var showsPercentageText: Bool = false
     @IBInspectable open var trackColor: UIColor = UIColor.yellow
     @IBInspectable open var barThickness: CGFloat = 10
     @IBInspectable open var barPadding: CGFloat = 0
@@ -60,11 +63,30 @@ open class LinearProgressView: UIView {
         context?.setLineWidth(barThickness)
         context?.beginPath()
         context?.move(to: CGPoint(x: barPadding + trackOffset, y: frame.size.height / 2))
-        context?.addLine(to: CGPoint(x: barPadding + trackOffset + calcualtePercentage(), y: frame.size.height / 2))
+        let reachedPercentage = barPadding + trackOffset + calcualtePercentage()
+        context?.addLine(to: CGPoint(x: reachedPercentage, y: frame.size.height / 2))
         context?.setLineCap(CGLineCap.round)
         context?.strokePath()
-        
         context?.restoreGState()
+        
+        //Percentage Text (just by the padding, in the bar)
+        if showsPercentageText {
+            let percentage = NSString(format: "%.1f%%", progressValue)
+            let textFont: UIFont = UIFont(name: "Helvetica Bold", size: barThickness*1.2)!
+            let style = NSMutableParagraphStyle()
+            style.alignment = .right
+            let textSize = percentage.size(attributes: [NSFontAttributeName: textFont, NSParagraphStyleAttributeName: style])
+            let screenWidth = frame.size.width - (barPadding * 2) - (trackOffset * 2)
+            let totalSize: CGFloat = barPadding + trackOffset + screenWidth
+            let textColor = totalSize - textSize.width < reachedPercentage ? self.secondaryTextColor : self.primaryTextColor
+            let textFontAttributes = [
+                NSFontAttributeName: textFont,
+                NSForegroundColorAttributeName: textColor,
+                NSParagraphStyleAttributeName: style
+            ]
+            let textRect = CGRect(x: 0, y: (frame.size.height-trackHeight)/2, width:totalSize, height: trackHeight)
+            percentage.draw(in: textRect, withAttributes: textFontAttributes)
+        }
     }
     
     /**
