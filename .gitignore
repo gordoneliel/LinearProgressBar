@@ -7,6 +7,8 @@ build/
 DerivedData/
 LinearProgressBar.xcodeproj/project.xcworkspace/xcuserdata/
 
+.DS_Store
+
 ## Various settings
 *.pbxuser
 !default.pbxuser
