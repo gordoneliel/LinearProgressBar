@@ -11,16 +11,19 @@ import LinearProgressBar
 
 class ViewController: UIViewController {
     
+    @IBOutlet weak var linearProgressBar: LinearProgressView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        linearProgressBar.delegate = self
+        linearProgressBar.progressValue = 48.8
     }
+}
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+extension ViewController: LinearProgressDelegate {
+    func didChangeProgress(fromValue from: Double, toValue to: Double) {
+        
     }
-
-
 }
 
