@@ -1,9 +1,13 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -15,32 +19,35 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j53-wF-rB4" userLabel="LinearProgressView" customClass="LinearProgressView" customModule="LinearProgressBar">
-                                <rect key="frame" x="0.0" y="35" width="600" height="50"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <rect key="frame" x="0.0" y="35" width="375" height="80"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="ld3-1K-uoC"/>
+                                    <constraint firstAttribute="height" constant="80" id="ld3-1K-uoC"/>
                                     <constraint firstAttribute="width" secondItem="j53-wF-rB4" secondAttribute="height" multiplier="4:1" id="ueX-nt-zq5"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="barPadding">
-                                        <real key="value" value="35"/>
+                                        <real key="value" value="37"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="barColor">
-                                        <color key="value" red="0.90980392160000001" green="0.68627450980000004" blue="0.078431372550000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="value" red="0.0" green="0.84229462986623993" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="trackColor">
-                                        <color key="value" red="0.85882353779999998" green="0.39794438778209235" blue="0.11220370306722112" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="value" red="0.92347474581202471" green="0.91813674150097269" blue="0.92881275012307696" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="trackPadding">
-                                        <real key="value" value="5"/>
+                                        <real key="value" value="6"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="progressValue">
-                                        <real key="value" value="80"/>
+                                        <real key="value" value="45"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="barThickness">
+                                        <real key="value" value="45"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <variation key="default">
@@ -50,25 +57,25 @@
                                 </variation>
                             </view>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="22" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="8p8-Kv-V3Y">
-                                <rect key="frame" x="33" y="138" width="534" height="31"/>
+                                <rect key="frame" x="33" y="168" width="309" height="31"/>
                                 <connections>
                                     <action selector="changeSliderValue:" destination="BYZ-38-t0r" eventType="valueChanged" id="Gpc-hx-4wy"/>
                                 </connections>
                             </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Use dynamic color" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4B5-mb-bcv">
-                                <rect key="frame" x="92" y="98" width="143" height="21"/>
+                                <rect key="frame" x="92" y="128" width="143" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="6jY-yw-67d">
-                                <rect key="frame" x="35" y="93" width="51" height="31"/>
+                                <rect key="frame" x="35" y="123" width="51" height="31"/>
                                 <connections>
                                     <action selector="changeSwitchValue:" destination="BYZ-38-t0r" eventType="valueChanged" id="24Y-XW-mpn"/>
                                 </connections>
                             </switch>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="4B5-mb-bcv" firstAttribute="leading" secondItem="6jY-yw-67d" secondAttribute="trailing" constant="8" id="Fji-mf-2SP"/>
                             <constraint firstAttribute="trailing" secondItem="j53-wF-rB4" secondAttribute="trailing" id="Jlg-PO-Jbs"/>
@@ -91,8 +98,8 @@
                         </variation>
                     </view>
                     <connections>
-                        <outlet property="linearProgressView" destination="j53-wF-rB4" id="7TI-x3-MdM"/>
-                        <outlet property="sliderView" destination="8p8-Kv-V3Y" id="fvM-Xf-s75"/>
+                        <outlet property="linearProgressView" destination="j53-wF-rB4" id="aRh-Cg-Fto"/>
+                        <outlet property="sliderView" destination="8p8-Kv-V3Y" id="MH1-Om-bLn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

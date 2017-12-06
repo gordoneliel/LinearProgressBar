@@ -11,25 +11,19 @@ import LinearProgressBar
 
 class ViewController: UIViewController {
     
-    @IBOutlet weak var linearProgressView:LinearProgressView!
+    @IBOutlet weak var linearProgressView: LinearProgressView!
     @IBOutlet weak var sliderView: UISlider!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        linearProgressView.progressValue = 48.8
+    }
     
-        linearProgressView.progressValue = CGFloat(sliderView.value)
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
     @IBAction func changeSliderValue(_ sender: UISlider) {
         linearProgressView.progressValue = CGFloat(sender.value)
     }
-
+    
     @IBAction func changeSwitchValue(_ sender: UISwitch) {
         if sender.isOn {
             // assign color closure
