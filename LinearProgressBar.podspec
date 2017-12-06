@@ -13,8 +13,7 @@ Pod::Spec.new do |s|
 
 
     s.homepage         = "https://github.com/gordoneliel/LinearProgressBar"
-    # s.screenshots     = "Promotional_images/hero.png"
-    s.license          = 'MIT'
+    s.license          = { :type => 'MIT', :file => 'LICENSE' }
     s.author           = { "Eliel Gordon" => "gordoneliel@gmail.com" }
     s.source           = { :git => "https://github.com/gordoneliel/LinearProgressBar.git", :tag => s.version.to_s }
     s.social_media_url = 'https://twitter.com/1gordoneliel'
@@ -23,6 +22,4 @@ Pod::Spec.new do |s|
     s.requires_arc = true
 
     s.source_files = 'LinearProgressBar/**/*.{swift}'
-
-    s.frameworks = 'UIKit'
 end
