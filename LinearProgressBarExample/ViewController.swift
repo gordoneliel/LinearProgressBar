@@ -16,14 +16,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        linearProgressBar.delegate = self
         linearProgressBar.progressValue = 48.8
-    }
-}
-
-extension ViewController: LinearProgressDelegate {
-    func didChangeProgress(fromValue from: Double, toValue to: Double) {
-        
     }
 }
 

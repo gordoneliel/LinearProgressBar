@@ -8,12 +8,6 @@
 
 import UIKit
 
-
-/// Protocol for LinearProgressBar
-public protocol LinearProgressDelegate: class {
-    func didChangeProgress(fromValue from: Double, toValue to: Double)
-}
-
 /// Draws a progress bar
 @IBDesignable
 public class LinearProgressView: UIView {
@@ -41,12 +35,8 @@ public class LinearProgressView: UIView {
     @IBInspectable public var progressValue: CGFloat = 0 {
         didSet {
             progressValue = progressValue.clamped(lowerBound: 0, upperBound: 100)
-            
-            delegate?.didChangeProgress(fromValue: Double(oldValue), toValue: Double(progressValue))
         }
     }
-    
-    weak public var delegate: LinearProgressDelegate?
     
     public override init(frame: CGRect) {
         super.init(frame: frame)
@@ -122,13 +112,5 @@ public class LinearProgressView: UIView {
         let screenWidth = frame.size.width - (barPadding * 2)
         let progress = ((progressValue / 100) * screenWidth)
         return progress < 0 ? barPadding : progress
-    }
-}
-
-extension CGRect {
-    func verticalCenteredRectForString(string: String, withAttributes attributes : [NSAttributedStringKey: Any]) -> CGRect {
-        let size = string.size(withAttributes: attributes)
-
-        return CGRect(x: self.origin.x, y: self.origin.y + (self.size.height - size.height) / 2.0, width: self.size.width, height: size.height)
     }
 }
