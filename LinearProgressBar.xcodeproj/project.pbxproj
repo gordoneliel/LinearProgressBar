@@ -1,604 +1,604 @@
 // !$*UTF8*$!
 {
-	archiveVersion = 1;
-	classes = {
-	};
-	objectVersion = 46;
-	objects = {
+    archiveVersion = 1;
+    classes = {
+    };
+    objectVersion = 46;
+    objects = {
 
 /* Begin PBXBuildFile section */
-		057FB7FC1FD785FC00F420F5 /* Clamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057FB7FB1FD785FC00F420F5 /* Clamp.swift */; };
-		058891B51C40F24100C1CC61 /* LinearProgressBar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05AC61B31BF6AE1D00BFA053 /* LinearProgressBar.framework */; };
-		058891B61C40F24100C1CC61 /* LinearProgressBar.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 05AC61B31BF6AE1D00BFA053 /* LinearProgressBar.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		05AC61B71BF6AE1D00BFA053 /* LinearProgressBar.h in Headers */ = {isa = PBXBuildFile; fileRef = 05AC61B61BF6AE1D00BFA053 /* LinearProgressBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		05AC61BE1BF6AE1D00BFA053 /* LinearProgressBar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05AC61B31BF6AE1D00BFA053 /* LinearProgressBar.framework */; };
-		05AC61C31BF6AE1D00BFA053 /* LinearProgressBarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05AC61C21BF6AE1D00BFA053 /* LinearProgressBarTests.swift */; };
-		05AC61CE1BF6B35900BFA053 /* LinearProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05AC61CD1BF6B35900BFA053 /* LinearProgressView.swift */; };
-		05AC61D61BF6B99600BFA053 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05AC61D51BF6B99600BFA053 /* AppDelegate.swift */; };
-		05AC61D81BF6B99600BFA053 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05AC61D71BF6B99600BFA053 /* ViewController.swift */; };
-		05AC61DB1BF6B99600BFA053 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05AC61D91BF6B99600BFA053 /* Main.storyboard */; };
-		05AC61DD1BF6B99600BFA053 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05AC61DC1BF6B99600BFA053 /* Assets.xcassets */; };
-		05AC61E01BF6B99600BFA053 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05AC61DE1BF6B99600BFA053 /* LaunchScreen.storyboard */; };
+        057FB7FC1FD785FC00F420F5 /* Clamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057FB7FB1FD785FC00F420F5 /* Clamp.swift */; };
+        058891B51C40F24100C1CC61 /* LinearProgressBar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05AC61B31BF6AE1D00BFA053 /* LinearProgressBar.framework */; };
+        058891B61C40F24100C1CC61 /* LinearProgressBar.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 05AC61B31BF6AE1D00BFA053 /* LinearProgressBar.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+        05AC61B71BF6AE1D00BFA053 /* LinearProgressBar.h in Headers */ = {isa = PBXBuildFile; fileRef = 05AC61B61BF6AE1D00BFA053 /* LinearProgressBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+        05AC61BE1BF6AE1D00BFA053 /* LinearProgressBar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05AC61B31BF6AE1D00BFA053 /* LinearProgressBar.framework */; };
+        05AC61C31BF6AE1D00BFA053 /* LinearProgressBarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05AC61C21BF6AE1D00BFA053 /* LinearProgressBarTests.swift */; };
+        05AC61CE1BF6B35900BFA053 /* LinearProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05AC61CD1BF6B35900BFA053 /* LinearProgressView.swift */; };
+        05AC61D61BF6B99600BFA053 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05AC61D51BF6B99600BFA053 /* AppDelegate.swift */; };
+        05AC61D81BF6B99600BFA053 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05AC61D71BF6B99600BFA053 /* ViewController.swift */; };
+        05AC61DB1BF6B99600BFA053 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05AC61D91BF6B99600BFA053 /* Main.storyboard */; };
+        05AC61DD1BF6B99600BFA053 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05AC61DC1BF6B99600BFA053 /* Assets.xcassets */; };
+        05AC61E01BF6B99600BFA053 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05AC61DE1BF6B99600BFA053 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		054997341C29058200D7C0E4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 05AC61AA1BF6AE1D00BFA053 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 05AC61D21BF6B99600BFA053;
-			remoteInfo = LinearProgressBarExample;
-		};
-		058891B71C40F24100C1CC61 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 05AC61AA1BF6AE1D00BFA053 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 05AC61B21BF6AE1D00BFA053;
-			remoteInfo = LinearProgressBar;
-		};
-		05AC61BF1BF6AE1D00BFA053 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 05AC61AA1BF6AE1D00BFA053 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 05AC61B21BF6AE1D00BFA053;
-			remoteInfo = LinearProgressBar;
-		};
+        054997341C29058200D7C0E4 /* PBXContainerItemProxy */ = {
+            isa = PBXContainerItemProxy;
+            containerPortal = 05AC61AA1BF6AE1D00BFA053 /* Project object */;
+            proxyType = 1;
+            remoteGlobalIDString = 05AC61D21BF6B99600BFA053;
+            remoteInfo = LinearProgressBarExample;
+        };
+        058891B71C40F24100C1CC61 /* PBXContainerItemProxy */ = {
+            isa = PBXContainerItemProxy;
+            containerPortal = 05AC61AA1BF6AE1D00BFA053 /* Project object */;
+            proxyType = 1;
+            remoteGlobalIDString = 05AC61B21BF6AE1D00BFA053;
+            remoteInfo = LinearProgressBar;
+        };
+        05AC61BF1BF6AE1D00BFA053 /* PBXContainerItemProxy */ = {
+            isa = PBXContainerItemProxy;
+            containerPortal = 05AC61AA1BF6AE1D00BFA053 /* Project object */;
+            proxyType = 1;
+            remoteGlobalIDString = 05AC61B21BF6AE1D00BFA053;
+            remoteInfo = LinearProgressBar;
+        };
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		058891B91C40F24100C1CC61 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				058891B61C40F24100C1CC61 /* LinearProgressBar.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
+        058891B91C40F24100C1CC61 /* Embed Frameworks */ = {
+            isa = PBXCopyFilesBuildPhase;
+            buildActionMask = 2147483647;
+            dstPath = "";
+            dstSubfolderSpec = 10;
+            files = (
+                058891B61C40F24100C1CC61 /* LinearProgressBar.framework in Embed Frameworks */,
+            );
+            name = "Embed Frameworks";
+            runOnlyForDeploymentPostprocessing = 0;
+        };
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		057FB7FB1FD785FC00F420F5 /* Clamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clamp.swift; sourceTree = "<group>"; };
-		05AC61B31BF6AE1D00BFA053 /* LinearProgressBar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LinearProgressBar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		05AC61B61BF6AE1D00BFA053 /* LinearProgressBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LinearProgressBar.h; sourceTree = "<group>"; };
-		05AC61B81BF6AE1D00BFA053 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		05AC61BD1BF6AE1D00BFA053 /* LinearProgressBarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LinearProgressBarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		05AC61C21BF6AE1D00BFA053 /* LinearProgressBarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinearProgressBarTests.swift; sourceTree = "<group>"; };
-		05AC61C41BF6AE1D00BFA053 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		05AC61CD1BF6B35900BFA053 /* LinearProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinearProgressView.swift; sourceTree = "<group>"; };
-		05AC61D31BF6B99600BFA053 /* LinearProgressBarExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LinearProgressBarExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		05AC61D51BF6B99600BFA053 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		05AC61D71BF6B99600BFA053 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		05AC61DA1BF6B99600BFA053 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		05AC61DC1BF6B99600BFA053 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		05AC61DF1BF6B99600BFA053 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		05AC61E11BF6B99600BFA053 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+        057FB7FB1FD785FC00F420F5 /* Clamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clamp.swift; sourceTree = "<group>"; };
+        05AC61B31BF6AE1D00BFA053 /* LinearProgressBar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LinearProgressBar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+        05AC61B61BF6AE1D00BFA053 /* LinearProgressBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LinearProgressBar.h; sourceTree = "<group>"; };
+        05AC61B81BF6AE1D00BFA053 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+        05AC61BD1BF6AE1D00BFA053 /* LinearProgressBarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LinearProgressBarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+        05AC61C21BF6AE1D00BFA053 /* LinearProgressBarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinearProgressBarTests.swift; sourceTree = "<group>"; };
+        05AC61C41BF6AE1D00BFA053 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+        05AC61CD1BF6B35900BFA053 /* LinearProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinearProgressView.swift; sourceTree = "<group>"; };
+        05AC61D31BF6B99600BFA053 /* LinearProgressBarExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LinearProgressBarExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+        05AC61D51BF6B99600BFA053 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+        05AC61D71BF6B99600BFA053 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+        05AC61DA1BF6B99600BFA053 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+        05AC61DC1BF6B99600BFA053 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+        05AC61DF1BF6B99600BFA053 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+        05AC61E11BF6B99600BFA053 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		05AC61AF1BF6AE1D00BFA053 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		05AC61BA1BF6AE1D00BFA053 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				05AC61BE1BF6AE1D00BFA053 /* LinearProgressBar.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		05AC61D01BF6B99600BFA053 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				058891B51C40F24100C1CC61 /* LinearProgressBar.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
+        05AC61AF1BF6AE1D00BFA053 /* Frameworks */ = {
+            isa = PBXFrameworksBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        05AC61BA1BF6AE1D00BFA053 /* Frameworks */ = {
+            isa = PBXFrameworksBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+                05AC61BE1BF6AE1D00BFA053 /* LinearProgressBar.framework in Frameworks */,
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        05AC61D01BF6B99600BFA053 /* Frameworks */ = {
+            isa = PBXFrameworksBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+                058891B51C40F24100C1CC61 /* LinearProgressBar.framework in Frameworks */,
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		05AC61A91BF6AE1D00BFA053 = {
-			isa = PBXGroup;
-			children = (
-				05AC61B51BF6AE1D00BFA053 /* LinearProgressBar */,
-				05AC61D41BF6B99600BFA053 /* LinearProgressBarExample */,
-				05AC61C11BF6AE1D00BFA053 /* LinearProgressBarTests */,
-				05AC61B41BF6AE1D00BFA053 /* Products */,
-			);
-			sourceTree = "<group>";
-		};
-		05AC61B41BF6AE1D00BFA053 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				05AC61B31BF6AE1D00BFA053 /* LinearProgressBar.framework */,
-				05AC61BD1BF6AE1D00BFA053 /* LinearProgressBarTests.xctest */,
-				05AC61D31BF6B99600BFA053 /* LinearProgressBarExample.app */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		05AC61B51BF6AE1D00BFA053 /* LinearProgressBar */ = {
-			isa = PBXGroup;
-			children = (
-				05AC61B61BF6AE1D00BFA053 /* LinearProgressBar.h */,
-				05AC61B81BF6AE1D00BFA053 /* Info.plist */,
-				05AC61CD1BF6B35900BFA053 /* LinearProgressView.swift */,
-				057FB7FB1FD785FC00F420F5 /* Clamp.swift */,
-			);
-			path = LinearProgressBar;
-			sourceTree = "<group>";
-		};
-		05AC61C11BF6AE1D00BFA053 /* LinearProgressBarTests */ = {
-			isa = PBXGroup;
-			children = (
-				05AC61C21BF6AE1D00BFA053 /* LinearProgressBarTests.swift */,
-				05AC61C41BF6AE1D00BFA053 /* Info.plist */,
-			);
-			path = LinearProgressBarTests;
-			sourceTree = "<group>";
-		};
-		05AC61D41BF6B99600BFA053 /* LinearProgressBarExample */ = {
-			isa = PBXGroup;
-			children = (
-				05AC61D51BF6B99600BFA053 /* AppDelegate.swift */,
-				05AC61D71BF6B99600BFA053 /* ViewController.swift */,
-				05AC61D91BF6B99600BFA053 /* Main.storyboard */,
-				05AC61DC1BF6B99600BFA053 /* Assets.xcassets */,
-				05AC61DE1BF6B99600BFA053 /* LaunchScreen.storyboard */,
-				05AC61E11BF6B99600BFA053 /* Info.plist */,
-			);
-			path = LinearProgressBarExample;
-			sourceTree = "<group>";
-		};
+        05AC61A91BF6AE1D00BFA053 = {
+            isa = PBXGroup;
+            children = (
+                05AC61B51BF6AE1D00BFA053 /* LinearProgressBar */,
+                05AC61D41BF6B99600BFA053 /* LinearProgressBarExample */,
+                05AC61C11BF6AE1D00BFA053 /* LinearProgressBarTests */,
+                05AC61B41BF6AE1D00BFA053 /* Products */,
+            );
+            sourceTree = "<group>";
+        };
+        05AC61B41BF6AE1D00BFA053 /* Products */ = {
+            isa = PBXGroup;
+            children = (
+                05AC61B31BF6AE1D00BFA053 /* LinearProgressBar.framework */,
+                05AC61BD1BF6AE1D00BFA053 /* LinearProgressBarTests.xctest */,
+                05AC61D31BF6B99600BFA053 /* LinearProgressBarExample.app */,
+            );
+            name = Products;
+            sourceTree = "<group>";
+        };
+        05AC61B51BF6AE1D00BFA053 /* LinearProgressBar */ = {
+            isa = PBXGroup;
+            children = (
+                05AC61B61BF6AE1D00BFA053 /* LinearProgressBar.h */,
+                05AC61B81BF6AE1D00BFA053 /* Info.plist */,
+                05AC61CD1BF6B35900BFA053 /* LinearProgressView.swift */,
+                057FB7FB1FD785FC00F420F5 /* Clamp.swift */,
+            );
+            path = LinearProgressBar;
+            sourceTree = "<group>";
+        };
+        05AC61C11BF6AE1D00BFA053 /* LinearProgressBarTests */ = {
+            isa = PBXGroup;
+            children = (
+                05AC61C21BF6AE1D00BFA053 /* LinearProgressBarTests.swift */,
+                05AC61C41BF6AE1D00BFA053 /* Info.plist */,
+            );
+            path = LinearProgressBarTests;
+            sourceTree = "<group>";
+        };
+        05AC61D41BF6B99600BFA053 /* LinearProgressBarExample */ = {
+            isa = PBXGroup;
+            children = (
+                05AC61D51BF6B99600BFA053 /* AppDelegate.swift */,
+                05AC61D71BF6B99600BFA053 /* ViewController.swift */,
+                05AC61D91BF6B99600BFA053 /* Main.storyboard */,
+                05AC61DC1BF6B99600BFA053 /* Assets.xcassets */,
+                05AC61DE1BF6B99600BFA053 /* LaunchScreen.storyboard */,
+                05AC61E11BF6B99600BFA053 /* Info.plist */,
+            );
+            path = LinearProgressBarExample;
+            sourceTree = "<group>";
+        };
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		05AC61B01BF6AE1D00BFA053 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				05AC61B71BF6AE1D00BFA053 /* LinearProgressBar.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
+        05AC61B01BF6AE1D00BFA053 /* Headers */ = {
+            isa = PBXHeadersBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+                05AC61B71BF6AE1D00BFA053 /* LinearProgressBar.h in Headers */,
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		05AC61B21BF6AE1D00BFA053 /* LinearProgressBar */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 05AC61C71BF6AE1D00BFA053 /* Build configuration list for PBXNativeTarget "LinearProgressBar" */;
-			buildPhases = (
-				05AC61AE1BF6AE1D00BFA053 /* Sources */,
-				05AC61AF1BF6AE1D00BFA053 /* Frameworks */,
-				05AC61B01BF6AE1D00BFA053 /* Headers */,
-				05AC61B11BF6AE1D00BFA053 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = LinearProgressBar;
-			productName = LinearProgressBar;
-			productReference = 05AC61B31BF6AE1D00BFA053 /* LinearProgressBar.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		05AC61BC1BF6AE1D00BFA053 /* LinearProgressBarTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 05AC61CA1BF6AE1D00BFA053 /* Build configuration list for PBXNativeTarget "LinearProgressBarTests" */;
-			buildPhases = (
-				05AC61B91BF6AE1D00BFA053 /* Sources */,
-				05AC61BA1BF6AE1D00BFA053 /* Frameworks */,
-				05AC61BB1BF6AE1D00BFA053 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				05AC61C01BF6AE1D00BFA053 /* PBXTargetDependency */,
-				054997351C29058200D7C0E4 /* PBXTargetDependency */,
-			);
-			name = LinearProgressBarTests;
-			productName = LinearProgressBarTests;
-			productReference = 05AC61BD1BF6AE1D00BFA053 /* LinearProgressBarTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		05AC61D21BF6B99600BFA053 /* LinearProgressBarExample */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 05AC61E21BF6B99600BFA053 /* Build configuration list for PBXNativeTarget "LinearProgressBarExample" */;
-			buildPhases = (
-				05AC61CF1BF6B99600BFA053 /* Sources */,
-				05AC61D01BF6B99600BFA053 /* Frameworks */,
-				05AC61D11BF6B99600BFA053 /* Resources */,
-				058891B91C40F24100C1CC61 /* Embed Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				058891B81C40F24100C1CC61 /* PBXTargetDependency */,
-			);
-			name = LinearProgressBarExample;
-			productName = LinearProgressBarExample;
-			productReference = 05AC61D31BF6B99600BFA053 /* LinearProgressBarExample.app */;
-			productType = "com.apple.product-type.application";
-		};
+        05AC61B21BF6AE1D00BFA053 /* LinearProgressBar */ = {
+            isa = PBXNativeTarget;
+            buildConfigurationList = 05AC61C71BF6AE1D00BFA053 /* Build configuration list for PBXNativeTarget "LinearProgressBar" */;
+            buildPhases = (
+                05AC61AE1BF6AE1D00BFA053 /* Sources */,
+                05AC61AF1BF6AE1D00BFA053 /* Frameworks */,
+                05AC61B01BF6AE1D00BFA053 /* Headers */,
+                05AC61B11BF6AE1D00BFA053 /* Resources */,
+            );
+            buildRules = (
+            );
+            dependencies = (
+            );
+            name = LinearProgressBar;
+            productName = LinearProgressBar;
+            productReference = 05AC61B31BF6AE1D00BFA053 /* LinearProgressBar.framework */;
+            productType = "com.apple.product-type.framework";
+        };
+        05AC61BC1BF6AE1D00BFA053 /* LinearProgressBarTests */ = {
+            isa = PBXNativeTarget;
+            buildConfigurationList = 05AC61CA1BF6AE1D00BFA053 /* Build configuration list for PBXNativeTarget "LinearProgressBarTests" */;
+            buildPhases = (
+                05AC61B91BF6AE1D00BFA053 /* Sources */,
+                05AC61BA1BF6AE1D00BFA053 /* Frameworks */,
+                05AC61BB1BF6AE1D00BFA053 /* Resources */,
+            );
+            buildRules = (
+            );
+            dependencies = (
+                05AC61C01BF6AE1D00BFA053 /* PBXTargetDependency */,
+                054997351C29058200D7C0E4 /* PBXTargetDependency */,
+            );
+            name = LinearProgressBarTests;
+            productName = LinearProgressBarTests;
+            productReference = 05AC61BD1BF6AE1D00BFA053 /* LinearProgressBarTests.xctest */;
+            productType = "com.apple.product-type.bundle.unit-test";
+        };
+        05AC61D21BF6B99600BFA053 /* LinearProgressBarExample */ = {
+            isa = PBXNativeTarget;
+            buildConfigurationList = 05AC61E21BF6B99600BFA053 /* Build configuration list for PBXNativeTarget "LinearProgressBarExample" */;
+            buildPhases = (
+                05AC61CF1BF6B99600BFA053 /* Sources */,
+                05AC61D01BF6B99600BFA053 /* Frameworks */,
+                05AC61D11BF6B99600BFA053 /* Resources */,
+                058891B91C40F24100C1CC61 /* Embed Frameworks */,
+            );
+            buildRules = (
+            );
+            dependencies = (
+                058891B81C40F24100C1CC61 /* PBXTargetDependency */,
+            );
+            name = LinearProgressBarExample;
+            productName = LinearProgressBarExample;
+            productReference = 05AC61D31BF6B99600BFA053 /* LinearProgressBarExample.app */;
+            productType = "com.apple.product-type.application";
+        };
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		05AC61AA1BF6AE1D00BFA053 /* Project object */ = {
-			isa = PBXProject;
-			attributes = {
-				LastSwiftUpdateCheck = 0710;
-				LastUpgradeCheck = 0810;
-				ORGANIZATIONNAME = "Eliel Gordon";
-				TargetAttributes = {
-					05AC61B21BF6AE1D00BFA053 = {
-						CreatedOnToolsVersion = 7.1.1;
-						DevelopmentTeam = F7AL96RPTB;
-						LastSwiftMigration = 0810;
-					};
-					05AC61BC1BF6AE1D00BFA053 = {
-						CreatedOnToolsVersion = 7.1.1;
-						TestTargetID = 05AC61D21BF6B99600BFA053;
-					};
-					05AC61D21BF6B99600BFA053 = {
-						CreatedOnToolsVersion = 7.1.1;
-						DevelopmentTeam = F7AL96RPTB;
-						LastSwiftMigration = 0810;
-					};
-				};
-			};
-			buildConfigurationList = 05AC61AD1BF6AE1D00BFA053 /* Build configuration list for PBXProject "LinearProgressBar" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
-			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-				Base,
-			);
-			mainGroup = 05AC61A91BF6AE1D00BFA053;
-			productRefGroup = 05AC61B41BF6AE1D00BFA053 /* Products */;
-			projectDirPath = "";
-			projectRoot = "";
-			targets = (
-				05AC61B21BF6AE1D00BFA053 /* LinearProgressBar */,
-				05AC61D21BF6B99600BFA053 /* LinearProgressBarExample */,
-				05AC61BC1BF6AE1D00BFA053 /* LinearProgressBarTests */,
-			);
-		};
+        05AC61AA1BF6AE1D00BFA053 /* Project object */ = {
+            isa = PBXProject;
+            attributes = {
+                LastSwiftUpdateCheck = 0710;
+                LastUpgradeCheck = 0810;
+                ORGANIZATIONNAME = "Eliel Gordon";
+                TargetAttributes = {
+                    05AC61B21BF6AE1D00BFA053 = {
+                        CreatedOnToolsVersion = 7.1.1;
+                        DevelopmentTeam = F7AL96RPTB;
+                        LastSwiftMigration = 0810;
+                    };
+                    05AC61BC1BF6AE1D00BFA053 = {
+                        CreatedOnToolsVersion = 7.1.1;
+                        TestTargetID = 05AC61D21BF6B99600BFA053;
+                    };
+                    05AC61D21BF6B99600BFA053 = {
+                        CreatedOnToolsVersion = 7.1.1;
+                        DevelopmentTeam = F7AL96RPTB;
+                        LastSwiftMigration = 0810;
+                    };
+                };
+            };
+            buildConfigurationList = 05AC61AD1BF6AE1D00BFA053 /* Build configuration list for PBXProject "LinearProgressBar" */;
+            compatibilityVersion = "Xcode 3.2";
+            developmentRegion = English;
+            hasScannedForEncodings = 0;
+            knownRegions = (
+                en,
+                Base,
+            );
+            mainGroup = 05AC61A91BF6AE1D00BFA053;
+            productRefGroup = 05AC61B41BF6AE1D00BFA053 /* Products */;
+            projectDirPath = "";
+            projectRoot = "";
+            targets = (
+                05AC61B21BF6AE1D00BFA053 /* LinearProgressBar */,
+                05AC61D21BF6B99600BFA053 /* LinearProgressBarExample */,
+                05AC61BC1BF6AE1D00BFA053 /* LinearProgressBarTests */,
+            );
+        };
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		05AC61B11BF6AE1D00BFA053 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		05AC61BB1BF6AE1D00BFA053 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		05AC61D11BF6B99600BFA053 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				05AC61E01BF6B99600BFA053 /* LaunchScreen.storyboard in Resources */,
-				05AC61DD1BF6B99600BFA053 /* Assets.xcassets in Resources */,
-				05AC61DB1BF6B99600BFA053 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
+        05AC61B11BF6AE1D00BFA053 /* Resources */ = {
+            isa = PBXResourcesBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        05AC61BB1BF6AE1D00BFA053 /* Resources */ = {
+            isa = PBXResourcesBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        05AC61D11BF6B99600BFA053 /* Resources */ = {
+            isa = PBXResourcesBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+                05AC61E01BF6B99600BFA053 /* LaunchScreen.storyboard in Resources */,
+                05AC61DD1BF6B99600BFA053 /* Assets.xcassets in Resources */,
+                05AC61DB1BF6B99600BFA053 /* Main.storyboard in Resources */,
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		05AC61AE1BF6AE1D00BFA053 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				05AC61CE1BF6B35900BFA053 /* LinearProgressView.swift in Sources */,
-				057FB7FC1FD785FC00F420F5 /* Clamp.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		05AC61B91BF6AE1D00BFA053 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				05AC61C31BF6AE1D00BFA053 /* LinearProgressBarTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		05AC61CF1BF6B99600BFA053 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				05AC61D81BF6B99600BFA053 /* ViewController.swift in Sources */,
-				05AC61D61BF6B99600BFA053 /* AppDelegate.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
+        05AC61AE1BF6AE1D00BFA053 /* Sources */ = {
+            isa = PBXSourcesBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+                05AC61CE1BF6B35900BFA053 /* LinearProgressView.swift in Sources */,
+                057FB7FC1FD785FC00F420F5 /* Clamp.swift in Sources */,
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        05AC61B91BF6AE1D00BFA053 /* Sources */ = {
+            isa = PBXSourcesBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+                05AC61C31BF6AE1D00BFA053 /* LinearProgressBarTests.swift in Sources */,
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        05AC61CF1BF6B99600BFA053 /* Sources */ = {
+            isa = PBXSourcesBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+                05AC61D81BF6B99600BFA053 /* ViewController.swift in Sources */,
+                05AC61D61BF6B99600BFA053 /* AppDelegate.swift in Sources */,
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		054997351C29058200D7C0E4 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 05AC61D21BF6B99600BFA053 /* LinearProgressBarExample */;
-			targetProxy = 054997341C29058200D7C0E4 /* PBXContainerItemProxy */;
-		};
-		058891B81C40F24100C1CC61 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 05AC61B21BF6AE1D00BFA053 /* LinearProgressBar */;
-			targetProxy = 058891B71C40F24100C1CC61 /* PBXContainerItemProxy */;
-		};
-		05AC61C01BF6AE1D00BFA053 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 05AC61B21BF6AE1D00BFA053 /* LinearProgressBar */;
-			targetProxy = 05AC61BF1BF6AE1D00BFA053 /* PBXContainerItemProxy */;
-		};
+        054997351C29058200D7C0E4 /* PBXTargetDependency */ = {
+            isa = PBXTargetDependency;
+            target = 05AC61D21BF6B99600BFA053 /* LinearProgressBarExample */;
+            targetProxy = 054997341C29058200D7C0E4 /* PBXContainerItemProxy */;
+        };
+        058891B81C40F24100C1CC61 /* PBXTargetDependency */ = {
+            isa = PBXTargetDependency;
+            target = 05AC61B21BF6AE1D00BFA053 /* LinearProgressBar */;
+            targetProxy = 058891B71C40F24100C1CC61 /* PBXContainerItemProxy */;
+        };
+        05AC61C01BF6AE1D00BFA053 /* PBXTargetDependency */ = {
+            isa = PBXTargetDependency;
+            target = 05AC61B21BF6AE1D00BFA053 /* LinearProgressBar */;
+            targetProxy = 05AC61BF1BF6AE1D00BFA053 /* PBXContainerItemProxy */;
+        };
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		05AC61D91BF6B99600BFA053 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				05AC61DA1BF6B99600BFA053 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		05AC61DE1BF6B99600BFA053 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				05AC61DF1BF6B99600BFA053 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
+        05AC61D91BF6B99600BFA053 /* Main.storyboard */ = {
+            isa = PBXVariantGroup;
+            children = (
+                05AC61DA1BF6B99600BFA053 /* Base */,
+            );
+            name = Main.storyboard;
+            sourceTree = "<group>";
+        };
+        05AC61DE1BF6B99600BFA053 /* LaunchScreen.storyboard */ = {
+            isa = PBXVariantGroup;
+            children = (
+                05AC61DF1BF6B99600BFA053 /* Base */,
+            );
+            name = LaunchScreen.storyboard;
+            sourceTree = "<group>";
+        };
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		05AC61C51BF6AE1D00BFA053 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		05AC61C61BF6AE1D00BFA053 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				SDKROOT = iphoneos;
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		05AC61C81BF6AE1D00BFA053 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = NO;
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = LinearProgressBar/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.gordoneliel.LinearProgressBar;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
-			};
-			name = Debug;
-		};
-		05AC61C91BF6AE1D00BFA053 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = NO;
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = LinearProgressBar/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.gordoneliel.LinearProgressBar;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-			};
-			name = Release;
-		};
-		05AC61CB1BF6AE1D00BFA053 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = LinearProgressBarTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.gordoneliel.LinearProgressBarTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LinearProgressBarExample.app/LinearProgressBarExample";
-			};
-			name = Debug;
-		};
-		05AC61CC1BF6AE1D00BFA053 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = LinearProgressBarTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.gordoneliel.LinearProgressBarTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LinearProgressBarExample.app/LinearProgressBarExample";
-			};
-			name = Release;
-		};
-		05AC61E31BF6B99600BFA053 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				INFOPLIST_FILE = LinearProgressBarExample/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.gordoneliel.LinearProgressBarExample;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-			};
-			name = Debug;
-		};
-		05AC61E41BF6B99600BFA053 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				INFOPLIST_FILE = LinearProgressBarExample/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.gordoneliel.LinearProgressBarExample;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-			};
-			name = Release;
-		};
+        05AC61C51BF6AE1D00BFA053 /* Debug */ = {
+            isa = XCBuildConfiguration;
+            buildSettings = {
+                ALWAYS_SEARCH_USER_PATHS = NO;
+                CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+                CLANG_CXX_LIBRARY = "libc++";
+                CLANG_ENABLE_MODULES = YES;
+                CLANG_ENABLE_OBJC_ARC = YES;
+                CLANG_WARN_BOOL_CONVERSION = YES;
+                CLANG_WARN_CONSTANT_CONVERSION = YES;
+                CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+                CLANG_WARN_EMPTY_BODY = YES;
+                CLANG_WARN_ENUM_CONVERSION = YES;
+                CLANG_WARN_INFINITE_RECURSION = YES;
+                CLANG_WARN_INT_CONVERSION = YES;
+                CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+                CLANG_WARN_SUSPICIOUS_MOVE = YES;
+                CLANG_WARN_UNREACHABLE_CODE = YES;
+                CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+                "CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+                COPY_PHASE_STRIP = NO;
+                CURRENT_PROJECT_VERSION = 1;
+                DEBUG_INFORMATION_FORMAT = dwarf;
+                ENABLE_STRICT_OBJC_MSGSEND = YES;
+                ENABLE_TESTABILITY = YES;
+                GCC_C_LANGUAGE_STANDARD = gnu99;
+                GCC_DYNAMIC_NO_PIC = NO;
+                GCC_NO_COMMON_BLOCKS = YES;
+                GCC_OPTIMIZATION_LEVEL = 0;
+                GCC_PREPROCESSOR_DEFINITIONS = (
+                    "DEBUG=1",
+                    "$(inherited)",
+                );
+                GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+                GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+                GCC_WARN_UNDECLARED_SELECTOR = YES;
+                GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+                GCC_WARN_UNUSED_FUNCTION = YES;
+                GCC_WARN_UNUSED_VARIABLE = YES;
+                IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+                MTL_ENABLE_DEBUG_INFO = YES;
+                ONLY_ACTIVE_ARCH = YES;
+                SDKROOT = iphoneos;
+                SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+                SWIFT_VERSION = 4.0;
+                TARGETED_DEVICE_FAMILY = "1,2";
+                VERSIONING_SYSTEM = "apple-generic";
+                VERSION_INFO_PREFIX = "";
+            };
+            name = Debug;
+        };
+        05AC61C61BF6AE1D00BFA053 /* Release */ = {
+            isa = XCBuildConfiguration;
+            buildSettings = {
+                ALWAYS_SEARCH_USER_PATHS = NO;
+                CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+                CLANG_CXX_LIBRARY = "libc++";
+                CLANG_ENABLE_MODULES = YES;
+                CLANG_ENABLE_OBJC_ARC = YES;
+                CLANG_WARN_BOOL_CONVERSION = YES;
+                CLANG_WARN_CONSTANT_CONVERSION = YES;
+                CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+                CLANG_WARN_EMPTY_BODY = YES;
+                CLANG_WARN_ENUM_CONVERSION = YES;
+                CLANG_WARN_INFINITE_RECURSION = YES;
+                CLANG_WARN_INT_CONVERSION = YES;
+                CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+                CLANG_WARN_SUSPICIOUS_MOVE = YES;
+                CLANG_WARN_UNREACHABLE_CODE = YES;
+                CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+                "CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+                COPY_PHASE_STRIP = NO;
+                CURRENT_PROJECT_VERSION = 1;
+                DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+                ENABLE_NS_ASSERTIONS = NO;
+                ENABLE_STRICT_OBJC_MSGSEND = YES;
+                GCC_C_LANGUAGE_STANDARD = gnu99;
+                GCC_NO_COMMON_BLOCKS = YES;
+                GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+                GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+                GCC_WARN_UNDECLARED_SELECTOR = YES;
+                GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+                GCC_WARN_UNUSED_FUNCTION = YES;
+                GCC_WARN_UNUSED_VARIABLE = YES;
+                IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+                MTL_ENABLE_DEBUG_INFO = NO;
+                SDKROOT = iphoneos;
+                SWIFT_VERSION = 4.0;
+                TARGETED_DEVICE_FAMILY = "1,2";
+                VALIDATE_PRODUCT = YES;
+                VERSIONING_SYSTEM = "apple-generic";
+                VERSION_INFO_PREFIX = "";
+            };
+            name = Release;
+        };
+        05AC61C81BF6AE1D00BFA053 /* Debug */ = {
+            isa = XCBuildConfiguration;
+            buildSettings = {
+                APPLICATION_EXTENSION_API_ONLY = NO;
+                CLANG_ENABLE_MODULES = YES;
+                CODE_SIGN_IDENTITY = "iPhone Developer";
+                "CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+                DEFINES_MODULE = YES;
+                DYLIB_COMPATIBILITY_VERSION = 1;
+                DYLIB_CURRENT_VERSION = 1;
+                DYLIB_INSTALL_NAME_BASE = "@rpath";
+                INFOPLIST_FILE = LinearProgressBar/Info.plist;
+                INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+                IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+                LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+                PRODUCT_BUNDLE_IDENTIFIER = com.gordoneliel.LinearProgressBar;
+                PRODUCT_NAME = "$(TARGET_NAME)";
+                SKIP_INSTALL = YES;
+                SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+                SWIFT_VERSION = 3.0;
+            };
+            name = Debug;
+        };
+        05AC61C91BF6AE1D00BFA053 /* Release */ = {
+            isa = XCBuildConfiguration;
+            buildSettings = {
+                APPLICATION_EXTENSION_API_ONLY = NO;
+                CLANG_ENABLE_MODULES = YES;
+                CODE_SIGN_IDENTITY = "iPhone Developer";
+                "CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+                DEFINES_MODULE = YES;
+                DYLIB_COMPATIBILITY_VERSION = 1;
+                DYLIB_CURRENT_VERSION = 1;
+                DYLIB_INSTALL_NAME_BASE = "@rpath";
+                INFOPLIST_FILE = LinearProgressBar/Info.plist;
+                INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+                IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+                LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+                PRODUCT_BUNDLE_IDENTIFIER = com.gordoneliel.LinearProgressBar;
+                PRODUCT_NAME = "$(TARGET_NAME)";
+                SKIP_INSTALL = YES;
+                SWIFT_VERSION = 3.0;
+            };
+            name = Release;
+        };
+        05AC61CB1BF6AE1D00BFA053 /* Debug */ = {
+            isa = XCBuildConfiguration;
+            buildSettings = {
+                INFOPLIST_FILE = LinearProgressBarTests/Info.plist;
+                LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+                PRODUCT_BUNDLE_IDENTIFIER = com.gordoneliel.LinearProgressBarTests;
+                PRODUCT_NAME = "$(TARGET_NAME)";
+                TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LinearProgressBarExample.app/LinearProgressBarExample";
+            };
+            name = Debug;
+        };
+        05AC61CC1BF6AE1D00BFA053 /* Release */ = {
+            isa = XCBuildConfiguration;
+            buildSettings = {
+                INFOPLIST_FILE = LinearProgressBarTests/Info.plist;
+                LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+                PRODUCT_BUNDLE_IDENTIFIER = com.gordoneliel.LinearProgressBarTests;
+                PRODUCT_NAME = "$(TARGET_NAME)";
+                TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LinearProgressBarExample.app/LinearProgressBarExample";
+            };
+            name = Release;
+        };
+        05AC61E31BF6B99600BFA053 /* Debug */ = {
+            isa = XCBuildConfiguration;
+            buildSettings = {
+                ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+                ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+                CODE_SIGN_IDENTITY = "iPhone Developer";
+                INFOPLIST_FILE = LinearProgressBarExample/Info.plist;
+                IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+                LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+                PRODUCT_BUNDLE_IDENTIFIER = com.gordoneliel.LinearProgressBarExample;
+                PRODUCT_NAME = "$(TARGET_NAME)";
+                SWIFT_VERSION = 3.0;
+            };
+            name = Debug;
+        };
+        05AC61E41BF6B99600BFA053 /* Release */ = {
+            isa = XCBuildConfiguration;
+            buildSettings = {
+                ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+                ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+                CODE_SIGN_IDENTITY = "iPhone Developer";
+                INFOPLIST_FILE = LinearProgressBarExample/Info.plist;
+                IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+                LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+                PRODUCT_BUNDLE_IDENTIFIER = com.gordoneliel.LinearProgressBarExample;
+                PRODUCT_NAME = "$(TARGET_NAME)";
+                SWIFT_VERSION = 3.0;
+            };
+            name = Release;
+        };
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		05AC61AD1BF6AE1D00BFA053 /* Build configuration list for PBXProject "LinearProgressBar" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				05AC61C51BF6AE1D00BFA053 /* Debug */,
-				05AC61C61BF6AE1D00BFA053 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		05AC61C71BF6AE1D00BFA053 /* Build configuration list for PBXNativeTarget "LinearProgressBar" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				05AC61C81BF6AE1D00BFA053 /* Debug */,
-				05AC61C91BF6AE1D00BFA053 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		05AC61CA1BF6AE1D00BFA053 /* Build configuration list for PBXNativeTarget "LinearProgressBarTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				05AC61CB1BF6AE1D00BFA053 /* Debug */,
-				05AC61CC1BF6AE1D00BFA053 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		05AC61E21BF6B99600BFA053 /* Build configuration list for PBXNativeTarget "LinearProgressBarExample" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				05AC61E31BF6B99600BFA053 /* Debug */,
-				05AC61E41BF6B99600BFA053 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
+        05AC61AD1BF6AE1D00BFA053 /* Build configuration list for PBXProject "LinearProgressBar" */ = {
+            isa = XCConfigurationList;
+            buildConfigurations = (
+                05AC61C51BF6AE1D00BFA053 /* Debug */,
+                05AC61C61BF6AE1D00BFA053 /* Release */,
+            );
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Release;
+        };
+        05AC61C71BF6AE1D00BFA053 /* Build configuration list for PBXNativeTarget "LinearProgressBar" */ = {
+            isa = XCConfigurationList;
+            buildConfigurations = (
+                05AC61C81BF6AE1D00BFA053 /* Debug */,
+                05AC61C91BF6AE1D00BFA053 /* Release */,
+            );
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Release;
+        };
+        05AC61CA1BF6AE1D00BFA053 /* Build configuration list for PBXNativeTarget "LinearProgressBarTests" */ = {
+            isa = XCConfigurationList;
+            buildConfigurations = (
+                05AC61CB1BF6AE1D00BFA053 /* Debug */,
+                05AC61CC1BF6AE1D00BFA053 /* Release */,
+            );
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Release;
+        };
+        05AC61E21BF6B99600BFA053 /* Build configuration list for PBXNativeTarget "LinearProgressBarExample" */ = {
+            isa = XCConfigurationList;
+            buildConfigurations = (
+                05AC61E31BF6B99600BFA053 /* Debug */,
+                05AC61E41BF6B99600BFA053 /* Release */,
+            );
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Release;
+        };
 /* End XCConfigurationList section */
-	};
-	rootObject = 05AC61AA1BF6AE1D00BFA053 /* Project object */;
+    };
+    rootObject = 05AC61AA1BF6AE1D00BFA053 /* Project object */;
 }

@@ -10,7 +10,7 @@ import UIKit
 
 /// Draws a progress bar
 @IBDesignable
-public class LinearProgressView: UIView {
+open class LinearProgressView: UIView {
     
     /// The color of the progress bar
     @IBInspectable public var barColor: UIColor = UIColor.green
@@ -35,25 +35,31 @@ public class LinearProgressView: UIView {
     @IBInspectable public var progressValue: CGFloat = 0 {
         didSet {
             progressValue = progressValue.clamped(lowerBound: 0, upperBound: 100)
+            setNeedsDisplay()
         }
     }
+    
     open var barColorForValue: ((Float)->UIColor)?
     
     fileprivate var trackHeight: CGFloat {
         return barThickness + trackPadding
     }
-    
+        
+    fileprivate var trackOffset: CGFloat {
+        return trackHeight / 2
+    }
+        
     public override init(frame: CGRect) {
         super.init(frame: frame)
         setup()
     }
-    
+        
     public required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         setup()
     }
     
-    override public func draw(_ rect: CGRect) {
+    open override func draw(_ rect: CGRect) {
         super.draw(rect)
         
         drawProgressView()
@@ -77,29 +83,33 @@ public class LinearProgressView: UIView {
         context.setLineCap(.round)
         context.strokePath()
     }
-    
-    /// Draws the progress bar and track
+
     func drawProgressView() {
         guard let context = UIGraphicsGetCurrentContext() else {return}
+        
+        let beginPoint = CGPoint(x: barPadding + trackOffset, y: frame.size.height / 2)
+        
         
         // Progress Bar Track
         drawOn(
             context: context,
             lineWidth: barThickness + trackPadding,
-            begin: CGPoint(x: barPadding, y: frame.size.height / 2),
-            end: CGPoint(x: frame.size.width - barPadding, y: frame.size.height / 2),
+            begin: beginPoint,
+            end: CGPoint(x: frame.size.width - barPadding - trackOffset, y: frame.size.height / 2),
             lineCap: .round,
             strokeColor: trackColor
         )
         
-        // Progress Bar
+        // Progress bar
+        let colorForBar = barColorForValue?(Float(progressValue)) ?? barColor
+        
         drawOn(
             context: context,
             lineWidth: barThickness,
-            begin: CGPoint(x: barPadding, y: frame.size.height / 2),
-            end: CGPoint(x: barPadding + calcualtePercentage(), y: frame.size.height / 2),
+            begin: beginPoint,
+            end: CGPoint(x: barPadding + trackOffset + calculatePercentage(), y: frame.size.height / 2),
             lineCap: .round,
-            strokeColor: barColor
+            strokeColor: colorForBar
         )
     }
     
@@ -113,7 +123,7 @@ public class LinearProgressView: UIView {
     /// Calculates the percent value of the progress bar
     ///
     /// - Returns: The percentage of progress
-    func calcualtePercentage() -> CGFloat {
+    func calculatePercentage() -> CGFloat {
         let screenWidth = frame.size.width - (barPadding * 2) - (trackOffset * 2)
         let progress = ((progressValue / 100) * screenWidth)
         return progress < 0 ? barPadding : progress
