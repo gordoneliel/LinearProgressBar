@@ -37,6 +37,11 @@ public class LinearProgressView: UIView {
             progressValue = progressValue.clamped(lowerBound: 0, upperBound: 100)
         }
     }
+    open var barColorForValue: ((Float)->UIColor)?
+    
+    fileprivate var trackHeight: CGFloat {
+        return barThickness + trackPadding
+    }
     
     public override init(frame: CGRect) {
         super.init(frame: frame)
@@ -109,7 +114,7 @@ public class LinearProgressView: UIView {
     ///
     /// - Returns: The percentage of progress
     func calcualtePercentage() -> CGFloat {
-        let screenWidth = frame.size.width - (barPadding * 2)
+        let screenWidth = frame.size.width - (barPadding * 2) - (trackOffset * 2)
         let progress = ((progressValue / 100) * screenWidth)
         return progress < 0 ? barPadding : progress
     }
