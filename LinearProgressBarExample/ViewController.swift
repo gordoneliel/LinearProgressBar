@@ -11,23 +11,23 @@ import LinearProgressBar
 
 class ViewController: UIViewController {
     
-    @IBOutlet weak var linearProgressView: LinearProgressView!
+    @IBOutlet weak var linearProgressBar: LinearProgressBar!
     @IBOutlet weak var sliderView: UISlider!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        linearProgressView.progressValue = 48.8
+        linearProgressBar.progressValue = 48.8
     }
     
     @IBAction func changeSliderValue(_ sender: UISlider) {
-        linearProgressView.progressValue = CGFloat(sender.value)
+        linearProgressBar.progressValue = CGFloat(sender.value)
     }
     
     @IBAction func changeSwitchValue(_ sender: UISwitch) {
         if sender.isOn {
             // assign color closure
-            linearProgressView.barColorForValue = { value in
+            linearProgressBar.barColorForValue = { value in
                 switch value {
                 case 0..<20:
                     return UIColor.red
@@ -40,9 +40,9 @@ class ViewController: UIViewController {
                 }
             }
             // refresh
-            linearProgressView.progressValue = CGFloat(sliderView.value)
+            linearProgressBar.progressValue = CGFloat(sliderView.value)
         } else {
-            linearProgressView.barColorForValue = nil
+            linearProgressBar.barColorForValue = nil
         }
     }
 }
