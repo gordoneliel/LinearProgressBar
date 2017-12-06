@@ -22,7 +22,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j53-wF-rB4" userLabel="LinearProgressView" customClass="LinearProgressView" customModule="LinearProgressBar">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j53-wF-rB4" userLabel="LinearProgressBar" customClass="LinearProgressBar" customModule="LinearProgressBar">
                                 <rect key="frame" x="0.0" y="35" width="375" height="80"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
@@ -32,7 +32,7 @@
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="barPadding">
-                                        <real key="value" value="37"/>
+                                        <real key="value" value="11"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="barColor">
                                         <color key="value" red="0.0" green="0.84229462986623993" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -41,13 +41,13 @@
                                         <color key="value" red="0.92347474581202471" green="0.91813674150097269" blue="0.92881275012307696" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="trackPadding">
-                                        <real key="value" value="6"/>
+                                        <real key="value" value="5"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="progressValue">
-                                        <real key="value" value="45"/>
+                                        <real key="value" value="54"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="barThickness">
-                                        <real key="value" value="45"/>
+                                        <real key="value" value="12"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <variation key="default">
@@ -98,7 +98,7 @@
                         </variation>
                     </view>
                     <connections>
-                        <outlet property="linearProgressView" destination="j53-wF-rB4" id="aRh-Cg-Fto"/>
+                        <outlet property="linearProgressBar" destination="j53-wF-rB4" id="lAm-L5-xbf"/>
                         <outlet property="sliderView" destination="8p8-Kv-V3Y" id="MH1-Om-bLn"/>
                     </connections>
                 </viewController>

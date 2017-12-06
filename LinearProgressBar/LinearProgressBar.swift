@@ -1,5 +1,5 @@
 //
-//  LinearProgressView.swift
+//  LinearProgressBar.swift
 //  LinearProgressBar
 //
 //  Created by Eliel Gordon on 11/13/15.
@@ -10,7 +10,7 @@ import UIKit
 
 /// Draws a progress bar
 @IBDesignable
-open class LinearProgressView: UIView {
+open class LinearProgressBar: UIView {
     
     /// The color of the progress bar
     @IBInspectable public var barColor: UIColor = UIColor.green
