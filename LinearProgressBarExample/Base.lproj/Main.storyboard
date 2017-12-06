@@ -46,6 +46,9 @@
                                     <userDefinedRuntimeAttribute type="number" keyPath="progressValue">
                                         <real key="value" value="45"/>
                                     </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="barThickness">
+                                        <real key="value" value="45"/>
+                                    </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <variation key="default">
                                     <mask key="constraints">
@@ -95,7 +98,8 @@
                         </variation>
                     </view>
                     <connections>
-                        <outlet property="linearProgressBar" destination="j53-wF-rB4" id="hzF-Bu-Vrx"/>
+                        <outlet property="linearProgressView" destination="j53-wF-rB4" id="aRh-Cg-Fto"/>
+                        <outlet property="sliderView" destination="8p8-Kv-V3Y" id="MH1-Om-bLn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
