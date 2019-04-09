@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		057FB7FC1FD785FC00F420F5 /* Clamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057FB7FB1FD785FC00F420F5 /* Clamp.swift */; };
 		058891B51C40F24100C1CC61 /* LinearProgressBar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05AC61B31BF6AE1D00BFA053 /* LinearProgressBar.framework */; };
 		058891B61C40F24100C1CC61 /* LinearProgressBar.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 05AC61B31BF6AE1D00BFA053 /* LinearProgressBar.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		05AC61B71BF6AE1D00BFA053 /* LinearProgressBar.h in Headers */ = {isa = PBXBuildFile; fileRef = 05AC61B61BF6AE1D00BFA053 /* LinearProgressBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -60,7 +59,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		057FB7FB1FD785FC00F420F5 /* Clamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clamp.swift; sourceTree = "<group>"; };
 		05AC61B31BF6AE1D00BFA053 /* LinearProgressBar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LinearProgressBar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		05AC61B61BF6AE1D00BFA053 /* LinearProgressBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LinearProgressBar.h; sourceTree = "<group>"; };
 		05AC61B81BF6AE1D00BFA053 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -130,7 +128,6 @@
 				05AC61B61BF6AE1D00BFA053 /* LinearProgressBar.h */,
 				05AC61B81BF6AE1D00BFA053 /* Info.plist */,
 				05AC61CD1BF6B35900BFA053 /* LinearProgressBar.swift */,
-				057FB7FB1FD785FC00F420F5 /* Clamp.swift */,
 			);
 			path = LinearProgressBar;
 			sourceTree = "<group>";
@@ -306,7 +303,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				05AC61CE1BF6B35900BFA053 /* LinearProgressBar.swift in Sources */,
-				057FB7FC1FD785FC00F420F5 /* Clamp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
