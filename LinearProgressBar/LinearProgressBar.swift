@@ -39,6 +39,12 @@ open class LinearProgressBar: UIView {
         }
     }
     
+    @IBInspectable public var capType: Int32 = 0 {
+        didSet {
+            
+        }
+    }
+    
     open var barColorForValue: ((Float)->UIColor)?
     
     fileprivate var trackHeight: CGFloat {
@@ -80,15 +86,18 @@ open class LinearProgressBar: UIView {
         context.setLineWidth(lineWidth)
         context.move(to: begin)
         context.addLine(to: end)
-        context.setLineCap(.round)
+        context.setLineCap(lineCap)
         context.strokePath()
     }
 
     func drawProgressView() {
-        guard let context = UIGraphicsGetCurrentContext() else {return}
+        guard let context = UIGraphicsGetCurrentContext()
+            else { return }
         
-        let beginPoint = CGPoint(x: barPadding + trackOffset, y: frame.size.height / 2)
-        
+        let beginPoint = CGPoint(
+            x: barPadding + trackOffset,
+            y: frame.size.height / 2
+        )
         
         // Progress Bar Track
         drawOn(
@@ -96,19 +105,20 @@ open class LinearProgressBar: UIView {
             lineWidth: barThickness + trackPadding,
             begin: beginPoint,
             end: CGPoint(x: frame.size.width - barPadding - trackOffset, y: frame.size.height / 2),
-            lineCap: .round,
+            lineCap: CGLineCap(rawValue: capType) ?? .round,
             strokeColor: trackColor
         )
         
         // Progress bar
         let colorForBar = barColorForValue?(Float(progressValue)) ?? barColor
+        let barLineWidth = calculatePercentage() > 0 ? barThickness : 0
         
         drawOn(
             context: context,
-            lineWidth: barThickness,
+            lineWidth: barLineWidth,
             begin: beginPoint,
             end: CGPoint(x: barPadding + trackOffset + calculatePercentage(), y: frame.size.height / 2),
-            lineCap: .round,
+            lineCap: CGLineCap(rawValue: capType) ?? .round,
             strokeColor: colorForBar
         )
     }

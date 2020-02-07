@@ -11,6 +11,7 @@ import LinearProgressBar
 
 class ViewController: UIViewController {
     
+    @IBOutlet weak var endCapType: UISegmentedControl!
     @IBOutlet weak var linearProgressBar: LinearProgressBar!
     @IBOutlet weak var sliderView: UISlider!
     
@@ -22,6 +23,10 @@ class ViewController: UIViewController {
     
     @IBAction func changeSliderValue(_ sender: UISlider) {
         linearProgressBar.progressValue = CGFloat(sender.value)
+    }
+    
+    @IBAction func endCapTypeChanged(_ sender: UISegmentedControl) {
+        linearProgressBar.capType = Int32(sender.selectedSegmentIndex)
     }
     
     @IBAction func changeSwitchValue(_ sender: UISwitch) {

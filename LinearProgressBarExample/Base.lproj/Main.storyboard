@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -22,82 +19,100 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j53-wF-rB4" userLabel="LinearProgressBar" customClass="LinearProgressBar" customModule="LinearProgressBar">
-                                <rect key="frame" x="0.0" y="35" width="375" height="80"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="80" id="ld3-1K-uoC"/>
-                                    <constraint firstAttribute="width" secondItem="j53-wF-rB4" secondAttribute="height" multiplier="4:1" id="ueX-nt-zq5"/>
-                                </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="barPadding">
-                                        <real key="value" value="11"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="barColor">
-                                        <color key="value" red="0.0" green="0.84229462986623993" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="trackColor">
-                                        <color key="value" red="0.92347474581202471" green="0.91813674150097269" blue="0.92881275012307696" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="trackPadding">
-                                        <real key="value" value="5"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="progressValue">
-                                        <real key="value" value="54"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="barThickness">
-                                        <real key="value" value="12"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="ueX-nt-zq5"/>
-                                    </mask>
-                                </variation>
-                            </view>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="22" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="8p8-Kv-V3Y">
-                                <rect key="frame" x="33" y="168" width="309" height="31"/>
-                                <connections>
-                                    <action selector="changeSliderValue:" destination="BYZ-38-t0r" eventType="valueChanged" id="Gpc-hx-4wy"/>
-                                </connections>
-                            </slider>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Use dynamic color" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4B5-mb-bcv">
-                                <rect key="frame" x="92" y="128" width="143" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="6jY-yw-67d">
-                                <rect key="frame" x="35" y="123" width="51" height="31"/>
-                                <connections>
-                                    <action selector="changeSwitchValue:" destination="BYZ-38-t0r" eventType="valueChanged" id="24Y-XW-mpn"/>
-                                </connections>
-                            </switch>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Z0J-kX-cxg">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="261"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j53-wF-rB4" userLabel="LinearProgressBar" customClass="LinearProgressBar" customModule="LinearProgressBar">
+                                        <rect key="frame" x="0.0" y="25" width="375" height="80"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="ld3-1K-uoC"/>
+                                            <constraint firstAttribute="width" secondItem="j53-wF-rB4" secondAttribute="height" multiplier="4:1" id="ueX-nt-zq5"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="barPadding">
+                                                <real key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="barColor">
+                                                <color key="value" red="0.0" green="0.84229462986623993" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="trackColor">
+                                                <color key="value" red="0.92347474581202471" green="0.91813674150097269" blue="0.92881275012307696" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="trackPadding">
+                                                <real key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="progressValue">
+                                                <real key="value" value="54"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="barThickness">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="capType">
+                                                <integer key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="ueX-nt-zq5"/>
+                                            </mask>
+                                        </variation>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="P93-xa-Xtn">
+                                        <rect key="frame" x="0.0" y="105" width="375" height="148"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ItB-eQ-Qbp">
+                                                <rect key="frame" x="15" y="8" width="345" height="31"/>
+                                                <subviews>
+                                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="6jY-yw-67d">
+                                                        <rect key="frame" x="0.0" y="0.0" width="51" height="31"/>
+                                                        <connections>
+                                                            <action selector="changeSwitchValue:" destination="BYZ-38-t0r" eventType="valueChanged" id="24Y-XW-mpn"/>
+                                                        </connections>
+                                                    </switch>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Use dynamic color" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4B5-mb-bcv">
+                                                        <rect key="frame" x="57" y="0.0" width="288" height="31"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="fjx-2K-itm">
+                                                <rect key="frame" x="15" y="59" width="345" height="32"/>
+                                                <segments>
+                                                    <segment title="Butt"/>
+                                                    <segment title="Round"/>
+                                                    <segment title="Square"/>
+                                                </segments>
+                                                <connections>
+                                                    <action selector="endCapTypeChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="oqw-46-UaF"/>
+                                                </connections>
+                                            </segmentedControl>
+                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="22" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="8p8-Kv-V3Y">
+                                                <rect key="frame" x="13" y="110" width="349" height="31"/>
+                                                <connections>
+                                                    <action selector="changeSliderValue:" destination="BYZ-38-t0r" eventType="valueChanged" id="Gpc-hx-4wy"/>
+                                                </connections>
+                                            </slider>
+                                        </subviews>
+                                        <edgeInsets key="layoutMargins" top="8" left="15" bottom="8" right="15"/>
+                                    </stackView>
+                                </subviews>
+                                <edgeInsets key="layoutMargins" top="25" left="0.0" bottom="8" right="0.0"/>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="4B5-mb-bcv" firstAttribute="leading" secondItem="6jY-yw-67d" secondAttribute="trailing" constant="8" id="Fji-mf-2SP"/>
-                            <constraint firstAttribute="trailing" secondItem="j53-wF-rB4" secondAttribute="trailing" id="Jlg-PO-Jbs"/>
-                            <constraint firstItem="4B5-mb-bcv" firstAttribute="centerY" secondItem="6jY-yw-67d" secondAttribute="centerY" id="MM8-Zt-P5x"/>
-                            <constraint firstItem="6jY-yw-67d" firstAttribute="leading" secondItem="8p8-Kv-V3Y" secondAttribute="leading" id="MYy-lp-DuK"/>
-                            <constraint firstItem="6jY-yw-67d" firstAttribute="top" secondItem="j53-wF-rB4" secondAttribute="bottom" constant="8" id="SL6-Cf-y8C"/>
-                            <constraint firstItem="8p8-Kv-V3Y" firstAttribute="trailing" secondItem="j53-wF-rB4" secondAttribute="trailing" constant="-35" id="SXF-Fv-cZ5"/>
-                            <constraint firstItem="j53-wF-rB4" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="35" id="XnT-Un-YwK"/>
-                            <constraint firstItem="8p8-Kv-V3Y" firstAttribute="leading" secondItem="j53-wF-rB4" secondAttribute="leading" constant="35" id="Y6K-r1-wek"/>
-                            <constraint firstItem="j53-wF-rB4" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="fjf-BP-xPi"/>
-                            <constraint firstItem="8p8-Kv-V3Y" firstAttribute="top" secondItem="j53-wF-rB4" secondAttribute="bottom" constant="53" id="pov-jY-gzh"/>
-                            <constraint firstItem="j53-wF-rB4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="szl-gs-u5c"/>
-                            <constraint firstItem="j53-wF-rB4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="z1J-9j-IzR"/>
+                            <constraint firstItem="Z0J-kX-cxg" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="Edm-GE-isW"/>
+                            <constraint firstAttribute="trailing" secondItem="Z0J-kX-cxg" secondAttribute="trailing" id="hRV-Jn-0rN"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" relation="greaterThanOrEqual" secondItem="Z0J-kX-cxg" secondAttribute="bottom" id="lVA-TZ-9Yw"/>
+                            <constraint firstItem="Z0J-kX-cxg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ra5-b3-j4g"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="fjf-BP-xPi"/>
-                                <exclude reference="szl-gs-u5c"/>
-                            </mask>
-                        </variation>
                     </view>
                     <connections>
+                        <outlet property="endCapType" destination="fjx-2K-itm" id="nxJ-R6-lnA"/>
                         <outlet property="linearProgressBar" destination="j53-wF-rB4" id="lAm-L5-xbf"/>
                         <outlet property="sliderView" destination="8p8-Kv-V3Y" id="MH1-Om-bLn"/>
                     </connections>
