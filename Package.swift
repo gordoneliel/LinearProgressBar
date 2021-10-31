@@ -17,9 +17,13 @@ let package = Package(
     targets: [
         .target(
             name: "LinearProgressBar",
-            dependencies: []),
+            dependencies: [],
+            path: "LinearProgressBar"
+        ),
         .testTarget(
             name: "LinearProgressBarTests",
-            dependencies: ["LinearProgressBar"]),
+            dependencies: ["LinearProgressBar"],
+            path: "LinearProgressBarTests"
+        ),
     ]
 )
