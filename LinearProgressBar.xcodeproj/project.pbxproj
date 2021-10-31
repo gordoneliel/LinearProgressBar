@@ -75,6 +75,7 @@
 		05AC61DC1BF6B99600BFA053 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		05AC61DF1BF6B99600BFA053 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		05AC61E11BF6B99600BFA053 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D48BC7F5272F07BD00BDC76C /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +108,7 @@
 		05AC61A91BF6AE1D00BFA053 = {
 			isa = PBXGroup;
 			children = (
+				D48BC7F5272F07BD00BDC76C /* Package.swift */,
 				05AC61B51BF6AE1D00BFA053 /* LinearProgressBar */,
 				05AC61D41BF6B99600BFA053 /* LinearProgressBarExample */,
 				05AC61C11BF6AE1D00BFA053 /* LinearProgressBarTests */,
